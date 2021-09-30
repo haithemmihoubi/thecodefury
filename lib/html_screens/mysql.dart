@@ -73,15 +73,15 @@ class Mysql extends StatelessWidget {
                     ),
                   ),
                   Cards(
-                      'Elzero Web School',
-                      'https://www.youtube.com/watch?v=-u9_T_CLZHY&list=PLDoPjvoNmBAzH72MTPuAAaYfReraNlQgM',
+                      'TheNewBaghdad',
+                      'https://www.youtube.com/watch?v=Apq8FuGNODM&list=PLF8OvnCBlEY25O_Ql0CrgQUAc5NVYkWF2',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Abdelrahman Gamal',
-                      'https://www.youtube.com/watch?v=oWK8KhU1JTk&list=PLknwEmKsW8OsQ3h0rtZznzCsKebpc158s',
+                      'Elzero webschool',
+                      'https://www.youtube.com/watch?v=DftlOK7fCtc&list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -99,22 +99,22 @@ class Mysql extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'Pierre Giraud',
-                      'https://www.youtube.com/watch?v=6AMZC3uIE4s&list=PLwLsbqvBlImHrYX8EKgp1st9vV04Cvymz',
+                      'John Taieb',
+                      'https://www.youtube.com/watch?v=V_jNPU3ewvs&list=PL5BcU-_5Oa_pCuJ9F59OCWQJfH5ehuuQp',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'Grafikart.fr',
-                      'https://www.youtube.com/watch?v=cWoq5znh0vw&list=PLjwdMgw5TTLVDv-ceONHM_C19dPW1MAMD',
+                      'https://www.youtube.com/watch?v=qrmLVJBJ-D4&list=PLjwdMgw5TTLUJLpzUYGBK7K5-hPgZA7zo',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'FormationVidéo',
-                      'https://www.youtube.com/watch?v=7lMXMLeawug&list=PLrSOXFDHBtfFuZttC17M-jNpKnzUL5Adc',
+                      'https://www.youtube.com/watch?v=3KwmNNucIjA&list=PLrSOXFDHBtfGl66sXijiN8SU9YJaM_EQg',
                       LineIcons.youtube),
                   SizedBox(
                     height: 20,
@@ -132,26 +132,26 @@ class Mysql extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'Program With Gio',
-                      'https://www.youtube.com/watch?v=sVbEyFZKgqk&list=PLr3d3QYzkw2xabQRUpcZ_IBk9W50M9pe-',
+                      'Steve Griffith - Prof3ssorSt3v3',
+                      'https://www.youtube.com/watch?v=a9W7OpS4LfI&list=PLyuRouwmQCjlXvBkTfGeDTq79r9_GoMt9',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'freeCodeCamp.org',
-                      'https://www.youtube.com/watch?v=OK_JCtrrv-c',
+                      'https://www.youtube.com/watch?v=HXV3zeQKqGY&t=1121s',
                       LineIcons.youtube),
                   Cards(
-                      'Traversy Media',
-                      'https://www.youtube.com/watch?v=2eebptXfEvw',
+                      'Extern Code',
+                      'https://www.youtube.com/watch?v=_vFiyFaQCPA',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Program With Gio',
-                      'https://www.youtube.com/watch?v=sVbEyFZKgqk&list=PLr3d3QYzkw2xabQRUpcZ_IBk9W50M9pe-',
+                      'Simplilearn',
+                      'https://www.youtube.com/watch?v=AA7i2GcTGwU',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -163,21 +163,21 @@ class Mysql extends StatelessWidget {
                     width: 20,
                     child: Center(
                       child: Text(
-                        'Advanced php ',
+                        'Advanced| PLSQL ,SQL SERVER',
                         style: GoogleFonts.aBeeZee(fontSize: 20),
                       ),
                     ),
                   ),
                   Cards(
-                      'Gary Clarke',
-                      'https://www.youtube.com/watch?v=NyRWaQo1pZo&list=PLQH1-k79HB3_LMrc9ytoOirBLaRlkM5Bi',
+                      'Intellipaat',
+                      'https://www.youtube.com/watch?v=9dNFCgpAGfI',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Dani Krossing',
-                      'https://www.youtube.com/watch?v=Anz0ArcQ5kI&list=PL0eyrZgxdwhypQiZnYXM7z7-OTkcMgGPh',
+                      'EqualConnect Coach',
+                      'https://www.youtube.com/watch?v=ibOzwFRm32w&list=PLiLpmqwkwkCt0QeXD8j7BwIoOaBGBRrZC',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
@@ -312,7 +312,7 @@ class Mysql extends StatelessWidget {
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Text(
-                "PHP (officially, this acronym is a recursive acronym for PHP Hypertext Preprocessor) is a general-purpose, open-source scripting language, specially designed for the development of web applications. It can be easily integrated into HTML.",
+                "MySQL is an open source SQL relational database management system developed and supported by Oracle.",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -331,7 +331,7 @@ class Mysql extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "June 8, 1995",
+                "1994",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -347,7 +347,7 @@ class Mysql extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "Zend Technologies",
+                "Oracle Corporation",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -363,9 +363,9 @@ class Mysql extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                ".php,.phar,.phtml,.pht,.phps",
+                ".sql",
                 style: GoogleFonts.acme(
-                    fontSize: 12, color: Colors.white, letterSpacing: 1.2),
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
             ),
             ListTile(
@@ -379,7 +379,23 @@ class Mysql extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "23 September 202",
+                "20 July 2021",
+                style: GoogleFonts.acme(
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                LineIcons.file,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Type",
+                style: GoogleFonts.acme(
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
+              ),
+              trailing: Text(
+                "RDBMS",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -390,19 +406,14 @@ class Mysql extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
-                "Contained by",
-                style: GoogleFonts.acme(
-                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
-              ),
-              trailing: Text(
-                "HTML Documents",
+                "Written in c,c++",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
             ),
             ListTile(
               onTap: () {
-                launch('https://www.php.net/');
+                launch('https://www.mysql.com/');
               },
               leading: Icon(
                 LineIcons.safari,
@@ -414,7 +425,7 @@ class Mysql extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "php.net",
+                "mysql.com",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -433,10 +444,10 @@ class Mysql extends StatelessWidget {
                   color: Color(0xFF00758F),
                 ),
                 onTap: () {
-                  launch('https://www.php.net/');
+                  launch('https://en.wikipedia.org/wiki/MySQL');
                 },
                 title: Text(
-                  'For more on php.net',
+                  'For more on wikipedia',
                   style: GoogleFonts.acme(
                       fontSize: 20,
                       color: Color(0xFF00758F),
