@@ -34,8 +34,7 @@ class _ShowCaseState extends State<ShowCase> {
 
     return Scaffold(
       bottomNavigationBar: Container(
-        height: 50,
-        width: 10,
+        height: 60,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15),
         ),
