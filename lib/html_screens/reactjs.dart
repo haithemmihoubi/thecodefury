@@ -90,7 +90,8 @@ class ReactJS extends StatelessWidget {
                   Cards(
                       'Coding with Osama',
                       'https://www.youtube.com/watch?v=jU9kDwRtjBE&list=PLE5dIBKIFrUGOaH5-NVKL78AqIwDYhm6i',
-                      LineIcons.youtube),SizedBox(
+                      LineIcons.youtube),
+                  SizedBox(
                     height: 10,
                   ),
                   Cards(
@@ -113,30 +114,26 @@ class ReactJS extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'Pierre Giraud',
-                      'https://www.youtube.com/watch?v=Y80juYcu3ZI&list=PLwLsbqvBlImHG5yeUCXJ1aqNMgUKi1NK3',
+                      'From Scratch - Développement Web',
+                      'https://www.youtube.com/watch?v=K3D2rjAUQ3o&list=PLEiMYEzpB4QuzEG3vVsmD87nXyn7ohHpb',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Grafikart.fr',
-                      'https://www.youtube.com/watch?v=oEAuNzWXRjM&list=PLjwdMgw5TTLUeixVGPNl1uZNeJy4UY6qX',
+                      'Donkey Geek',
+                      'https://www.youtube.com/watch?v=_Zgx2QMfXVg&list=PLmYBIzXGbEzLhBgbGa7ucqGJr5RgmzjWr',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'FormationVidéo',
-                      'https://www.youtube.com/watch?v=u5W2NWItytc&list=PLrSOXFDHBtfE5tpw0bjMevWxMWXotiSdO',
+                      'Dave Gray',
+                      'https://www.youtube.com/watch?v=TeeAp5zkYnI&list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'freeCodeCamp.org',
-                      'https://www.youtube.com/watch?v=Tg1xZic-JQs&list=PLwWXkX8UsKlgkg0U_JH82p4bLSuAuTdof',
-                      LineIcons.youtube),
                   Container(
                     width: 20,
                     child: Center(
@@ -150,26 +147,37 @@ class ReactJS extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'freeCodeCamp.org',
-                      'https://www.youtube.com/watch?v=pQN-pnXPaVg',
+                      'Codevolution',
+                      'https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3',
                       LineIcons.youtube),
+                  Text('Believe these two instructors are the gods of react '),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Cards(
-                      'freeCodeCamp.org',
-                      'https://www.youtube.com/watch?v=mU6anWqZJcc&t=37119s',
+                      'Clever Programmer',
+                      'https://www.youtube.com/watch?v=-cMqr9HpZ-Y&t=3398s',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Programming with Mosh',
-                      'https://www.youtube.com/watch?v=qz0aGYrrlhU',
+                      'Sonny Sangha',
+                      'https://www.youtube.com/watch?v=tbvguOj8C-o&t=35s',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Traversy Media',
-                      'https://www.youtube.com/watch?v=UB1O30fR-EE&t=3085s',
+                      'Clever Programmer',
+                      'https://www.youtube.com/watch?v=0mVbNp1ol_w&t=22749s',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Code with tkssharma',
+                      'https://www.youtube.com/watch?v=ZWqfADc-0K8&list=PLIGDNOJWiL19gSS77cxozYBGpxeSYKmxz',
                       LineIcons.youtube),
                   /*This is the end of the youtube section*/
                 ],
@@ -184,7 +192,7 @@ class ReactJS extends StatelessWidget {
                     width: 20,
                     child: Center(
                       child: Text(
-                        'Paid and free Courses',
+                        'Paid  Courses',
                         style: GoogleFonts.aBeeZee(fontSize: 20),
                       ),
                     ),
@@ -193,24 +201,26 @@ class ReactJS extends StatelessWidget {
                     height: 20,
                   ),
                   Cards(
-                      'udemy-Jean-philippe Parein',
-                      'https://www.udemy.com/course/apprendre-le-html5-et-css3-debutant-a-expert/',
+                      'Clever Programmer',
+                      'https://www.cleverprogrammer.com/fem-optin-fit-org?utm_source=youtube&utm_medium=yt-description&utm_campaign=fem-all-day&utm_content=7-oct-20-reactjs-12-hour-tutorial-2021',
                       LineIcons.school),
                   Cards(
-                      'coursera',
-                      'https://www.coursera.org/learn/html-css-javascript-for-web-developers',
+                      'udemy',
+                      'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'codecademy',
-                      'https://www.codecademy.com/search?query=HTML',
+                      'udemy',
+                      'https://www.eduonix.com/react-the-complete-guide-incl-redux',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('Edx', 'https://www.edx.org/learn/html',
+                  Cards(
+                      'eduonix',
+                      'https://www.eduonix.com/new_dashboard/master-reactjs',
                       LineIcons.school),
                 ],
               ),
