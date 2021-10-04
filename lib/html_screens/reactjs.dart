@@ -234,7 +234,7 @@ class ReactJS extends StatelessWidget {
                     width: 20,
                     child: Center(
                       child: Text(
-                        'DOCS',
+                        'free courses ',
                         style: GoogleFonts.aBeeZee(fontSize: 20),
                       ),
                     ),
@@ -243,23 +243,33 @@ class ReactJS extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'w3schools',
-                      'https://www.w3schools.com/html/default.asp',
-                      LineIcons.globe),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards('html', 'https://html.com/', LineIcons.globe),
-                  Cards(
-                      'tutorialspoint',
-                      'https://www.tutorialspoint.com/html/index.htm',
+                      'reactjs.org',
+                      'https://fr.reactjs.org/tutorial/tutorial.html',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'codescracker',
-                      'https://codescracker.com/html/index.htm',
+                      'openclassrooms',
+                      'https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'blog.glitch',
+                      'https://blog.glitch.com/post/react-starter-kit',
+                      LineIcons.globe),
+                  Cards(
+                      'codecademy',
+                      'https://www.codecademy.com/learn/react-101',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'egghead',
+                      'https://egghead.io/courses/react-with-class-components-fundamentals-4351f8bb',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
@@ -269,14 +279,12 @@ class ReactJS extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('freecodecamp', 'https://www.freecodecamp.org/',
+                  Cards('free-react', 'https://ui.dev/free-react-bootcamp/',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'coderepublics',
-                      'https://www.coderepublics.com/HTML/html-tutorial.php',
+                  Cards('scrimba', 'https://scrimba.com/learn/learnreact',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
@@ -285,6 +293,48 @@ class ReactJS extends StatelessWidget {
                       'tutorialrepublic',
                       'https://www.tutorialrepublic.com/html-tutorial/',
                       LineIcons.globe),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Container(
+                    width: 20,
+                    child: Center(
+                      child: Text(
+                        'Paid courses ',
+                        style: GoogleFonts.aBeeZee(fontSize: 20),
+                      ),
+                    ),
+                  ),
+                  Cards('frontendmasters',
+                      'https://frontendmasters.com/courses/', LineIcons.globe),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Cards('egghead.io', 'https://egghead.io/q/react',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Cards('newline.co', 'https://www.newline.co/fullstack-react/',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Cards('reactforbeginners', 'https://reactforbeginners.com/',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Cards('designcode', 'https://designcode.io/react',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Cards('learnreact', 'https://learnreact.design/',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 20,
+                  ),
                 ],
               ),
             ],
