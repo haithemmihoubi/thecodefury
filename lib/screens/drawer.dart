@@ -17,7 +17,7 @@ class DRAWER extends StatelessWidget {
             child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              currentAccountPicture: Image.asset('assets/images/cf.png'),
+              currentAccountPicture: Image.asset('assets/drawerlogo.png'),
               accountName: Text(
                 'CodeFlow',
                 style: GoogleFonts.acme(fontSize: 20),

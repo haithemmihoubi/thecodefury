@@ -38,13 +38,33 @@ dependencies:
   line_icons: ^2.0.0
   sliding_clipped_nav_bar: ^1.0.3
   backdrop: ^0.6.2
+  flutter_native_splash: ^1.2.4
+  custom_navigation_bar:
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.9.2
 
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/codeflowlogo.png"
 
   flutter_lints: ^1.0.0
+  flutter_native_splash: ^1.2.4
+
+flutter_native_splash:
+   color: "#ffffff"
+   image: "assets/logo.png"
+   android: true
+   ios: true
+
+
+
+
+
 
 
 flutter:

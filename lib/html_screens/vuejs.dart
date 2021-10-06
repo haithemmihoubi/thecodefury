@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:backdrop/app_bar.dart';
 import 'package:backdrop/scaffold.dart';
 import 'package:flutter/material.dart';
@@ -11,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../card.dart';
 
-class Angular extends StatelessWidget {
+class VueJs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BackdropScaffold(
@@ -28,31 +27,31 @@ class Angular extends StatelessWidget {
                 Tab(
                   icon: Icon(
                     LineIcons.youtube,
-                    color: Color(0xffdd1b16),
+                    color: Color(0xff42b883),
                   ),
                   child: Text(
                     'Youtube',
-                    style: TextStyle(color: Color(0xffdd1b16)),
+                    style: TextStyle(color: Color(0xff42b883)),
                   ),
                 ),
                 Tab(
                   icon: Icon(
                     LineIcons.graduationCap,
-                    color: Color(0xffdd1b16),
+                    color: Color(0xff42b883),
                   ),
                   child: Text(
                     'Platform',
-                    style: TextStyle(color: Color(0xffdd1b16)),
+                    style: TextStyle(color: Color(0xff42b883)),
                   ),
                 ),
                 Tab(
                   icon: Icon(
                     LineIcons.globe,
-                    color: Color(0xffdd1b16),
+                    color: Color(0xff42b883),
                   ),
                   child: Text(
                     'Docs',
-                    style: TextStyle(color: Color(0xffdd1b16)),
+                    style: TextStyle(color: Color(0xff42b883)),
                   ),
                 ),
               ],
@@ -75,29 +74,29 @@ class Angular extends StatelessWidget {
                     ),
                   ),
                   Cards(
-                      'Free4arab | Information Technology',
-                      'https://www.youtube.com/watch?v=TcNyTC3kjmE&list=PLCIJjtzQPZJ9bVAyAfLFGI2bYhrsKolof',
+                      'Elzero Web School',
+                      'https://www.youtube.com/watch?v=13fv-xEAFmY&list=PLDoPjvoNmBAxr5AqK3Yz4DWYKVSmIFziw',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'WinoPapa',
-                      'https://www.youtube.com/watch?v=TVg-TgAFRSQ&list=PLyr3gkJ8OBxpHkHXJNJuyEF77Y3po2tBI',
+                      'Bashir Pro',
+                      'https://www.youtube.com/watch?v=8yT0QIJOKB0&list=PL1FWK-sgJ9eljz7Tm5SSUcCt5sxmwoFlC',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Learn+',
-                      'https://www.youtube.com/watch?v=o2apvkyi3kc&list=PL9iY86lJSZY6JZ3cArXUgo34JVWVf_8kI',
+                      'WinoPaPa',
+                      'https://www.youtube.com/watch?v=kq59jIDe0-c&list=PLyr3gkJ8OBxrt_HVPIxk9VBPoe6Kth19r',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Angular Army',
-                      'https://www.youtube.com/watch?v=zWRt03h9Ju8&list=PL1ano0qwNuBwA90YwA-5d8g2wbOYHkl5h',
+                      'Muhammed Essa',
+                      'https://www.youtube.com/watch?v=M4LKMCluaz4&list=PLMYF6NkLrdN8AKDZD6URTl4hxm2btk4Rl',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -115,22 +114,15 @@ class Angular extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'Coulisses Tech',
-                      'https://www.youtube.com/watch?v=mg3-Owd5dhE&list=PLrbLGOB571zeR7FUQifKmjUpT4ImldCPt',
+                      'Grafikart.fr',
+                      'https://www.youtube.com/watch?v=g7YKecZhFRA&list=PLjwdMgw5TTLW-mAtlR46VajrKs4dep3y0',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'Tech Wall',
-                      'https://www.youtube.com/watch?v=oj2DZtFFiaM&list=PLl3CtU4THqPYNPElacumSgXXdzG0eSwjh',
-                      LineIcons.youtube),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'CamelCase TI',
-                      'https://www.youtube.com/watch?v=JrKhNU06Yic&list=PLcZPoziuBpDej91DKyCS612oSVuGZVtD9',
+                      'https://www.youtube.com/watch?v=YrJA-9KfuRc&list=PLl3CtU4THqPZ1ARMWsmhCYzlCEMZgTBes',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -149,23 +141,43 @@ class Angular extends StatelessWidget {
                   ),
                   Cards(
                       'Code Step By Step',
-                      'https://www.youtube.com/watch?v=oMj95u2zK4Y&list=PL8p2I9GklV47eNpoo4Fr6fkags72a8F0v',
-                      LineIcons.youtube),
-                  Cards(
-                      'ARC Tutorials',
-                      'https://www.youtube.com/watch?v=f3CcneXbJk8&list=PLp50dWW_m40XgTvxNoxddGkir5kSpFFmK',
+                      'https://www.youtube.com/watch?v=vPjRDxUsWMo&list=PL8p2I9GklV47GZrhYwnnStpx_B5GqL1Aq',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'ARC Tutorials',
-                      'https://www.youtube.com/watch?v=oEO0KzY1ipg&list=PLp50dWW_m40XvOAFFMYUYVzTecTS8AywO',
+                      'Clever Programmer',
+                      'https://www.youtube.com/watch?v=ccsz9FRy-nk&list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
-
+                  Cards(
+                      'Codevolution',
+                      'https://www.youtube.com/watch?v=tbvguOj8C-o&t=35s',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Bitfumes',
+                      'https://www.youtube.com/watch?v=e-E0UB-YDRk&t=22213s',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Laracasts',
+                      'https://www.youtube.com/watch?v=Y05uRiksXXI&list=PL3VM-unCzF8iRyPotjFsgy7EfuCITvr_3',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'The Net Ninja',
+                      'https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa',
+                      LineIcons.youtube),
                   /*This is the end of the youtube section*/
                 ],
               ),
@@ -179,7 +191,7 @@ class Angular extends StatelessWidget {
                     width: 20,
                     child: Center(
                       child: Text(
-                        'Paid and free Courses',
+                        'Paid  Courses',
                         style: GoogleFonts.aBeeZee(fontSize: 20),
                       ),
                     ),
@@ -189,32 +201,23 @@ class Angular extends StatelessWidget {
                   ),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/the-complete-guide-to-angular-2/',
+                      'https://www.udemy.com/course/vuejs-2-the-complete-guide/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-AgYp5NGhLT37jgAV95KxZw&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                   Cards(
-                      'udemy',
-                      'https://www.udemy.com/course/the-complete-angular-master-class/',
+                      'laracasts',
+                      'https://laracasts.com/series/learn-vue-2-step-by-step',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards('vuejs.org', 'https://vuejs.org/v2/guide/',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'udemy',
-                      'https://www.udemy.com/course/the-modern-angular-bootcamp/',
-                      LineIcons.school),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'udemy',
-                      'https://www.udemy.com/course/full-stack-angular-spring-boot-tutorial/',
-                      LineIcons.school),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'udemy',
-                      'https://www.udemy.com/course/angular-all-you-need-to-know/',
+                      'vuemastery',
+                      'https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/',
                       LineIcons.school),
                 ],
               ),
@@ -228,7 +231,7 @@ class Angular extends StatelessWidget {
                     width: 20,
                     child: Center(
                       child: Text(
-                        'DOCS',
+                        'free courses ',
                         style: GoogleFonts.aBeeZee(fontSize: 20),
                       ),
                     ),
@@ -236,29 +239,34 @@ class Angular extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'angular.io',
-                      'https://angular.io/',
-                      LineIcons.globe),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards('freecodecamp', 'https://www.freecodecamp.org/news/tag/angular/', LineIcons.globe),
-                  Cards(
-                      'angular-university',
-                      'https://blog.angular-university.io/',
-                      LineIcons.globe),
+                  Cards('vuejs.org', 'https://vuejs.org/', LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'codescracker',
-                      'https://docs.angular.lat/guide/docs-style-guide',
+                      'vuejs', 'https://vuejs.org/v2/guide/', LineIcons.globe),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'codecademy',
+                      'https://www.codecademy.com/courses/learn-vue-js/lessons/vue-introduction/exercises/front-end-frameworks',
+                      LineIcons.globe),
+                  Cards(
+                      'coursetro',
+                      'https://coursetro.com/courses/23/Vue-Tutorial-in-2018---Learn-Vue.js-by-Example',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-
+                  Cards('scrimba', 'https://scrimba.com/playlist/pXKqta',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
                 ],
               ),
             ],
@@ -269,13 +277,14 @@ class Angular extends StatelessWidget {
         child: ListView(
           children: [
             Image.asset(
-              'assets/angular.png',
+              'assets/vuejs.png',
+              width: 100,
               height: 150,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Text(
-                "Angular is a client-side, open-source, TypeScript-based framework co-led by the “Angular” project team at Google and a community of individuals and companies. Angular is a complete rewrite of AngularJS, a framework built by the same team ",
+                "Vue.js,is an open-source JavaScript framework used to build user interfaces and single-page web applications. Vue was created by Evan You and is maintained by him and the rest of the active core team members working on the project and its ecosystem.",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -294,7 +303,7 @@ class Angular extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                " version	septembre 2016",
+                " février 2014",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -310,7 +319,23 @@ class Angular extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "Google",
+                "Evan You",
+                style: GoogleFonts.acme(
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                LineIcons.codeFile,
+                color: Colors.white,
+              ),
+              title: Text(
+                "Filename extension",
+                style: GoogleFonts.acme(
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
+              ),
+              trailing: Text(
+                ".jsx, .js",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -321,12 +346,12 @@ class Angular extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
-                "Type code",
+                "Written in",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "TEXT",
+                "JavaScript",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -337,19 +362,19 @@ class Angular extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
-                "Contained by",
+                "Type",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "Web browser",
+                "JavaScript framework",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
             ),
             ListTile(
               onTap: () {
-                launch('https://angular.io/');
+                launch('https://vuejs.org/');
               },
               leading: Icon(
                 LineIcons.safari,
@@ -361,7 +386,7 @@ class Angular extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "angular.io",
+                "vuejs.org",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -373,21 +398,20 @@ class Angular extends StatelessWidget {
               child: ListTile(
                 trailing: Icon(
                   LineIcons.arrowRight,
-                  color: Color(0xffdd1b16),
+                  color: Color(0xff42b883),
                 ),
                 leading: Icon(
                   LineIcons.info,
-                  color: Color(0xffdd1b16),
+                  color: Color(0xff42b883),
                 ),
                 onTap: () {
-                  launch(
-                      'https://en.wikipedia.org/wiki/Angular_(web_framework)');
+                  launch('https://vuejs.org/');
                 },
                 title: Text(
-                  'For more on wikipedia',
+                  'For more on vuejs.org',
                   style: GoogleFonts.acme(
                       fontSize: 20,
-                      color: Color(0xffdd1b16),
+                      color: Color(0xff42b883),
                       letterSpacing: 1.2),
                 ),
               ),
@@ -399,13 +423,13 @@ class Angular extends StatelessWidget {
         ),
         width: MediaQuery.of(context).size.height * 0.6,
         decoration: BoxDecoration(
-          color: Color(0xffdd1b16),
+          color: Color(0xff42b883),
         ),
       ),
       appBar: BackdropAppBar(
-        backgroundColor: Color(0xffdd1b16),
+        backgroundColor: Color(0xff42b883),
         title: Icon(
-          LineIcons.angular,
+          LineIcons.vueJs,
           size: 39,
         ),
         centerTitle: true,

@@ -1,3 +1,4 @@
+import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -8,6 +9,7 @@ import 'package:line_icons/line_icons.dart';
 import 'package:lottie/lottie.dart';
 import 'package:get/get.dart';
 import 'package:sliding_clipped_nav_bar/sliding_clipped_nav_bar.dart';
+import 'package:thecodefury/screens/about.dart';
 import 'package:thecodefury/screens/technologies.dart';
 
 import 'homepage.dart';
@@ -33,53 +35,46 @@ class _ShowCaseState extends State<ShowCase> {
     bool islight = Get.isDarkMode;
 
     return Scaffold(
-      bottomNavigationBar: Container(
-        height: 60,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-        ),
-        child: SlidingClippedNavBar.colorful(
-          backgroundColor: Colors.white,
-          onButtonPressed: (index) {
-            setState(() {
-              selectedIndex = index;
-            });
-            _pageController.animateToPage(selectedIndex,
-                duration: const Duration(milliseconds: 300),
-                curve: Curves.easeInOut);
-          },
-          iconSize: 27,
-          selectedIndex: selectedIndex,
-          barItems: [
-            BarItem(
-              icon: LineIcons.home,
-              title: 'Home',
-              activeColor: Colors.black,
-              inactiveColor: Colors.deepPurpleAccent,
+      bottomNavigationBar: CustomNavigationBar(
+        borderRadius: Radius.circular(8),
+        elevation: 2,
+        iconSize: 30.0,
+        selectedColor: Colors.lightBlue,
+        strokeColor: Colors.lightBlue,
+        unSelectedColor: Colors.black,
+        backgroundColor: Colors.white,
+        opacity: 2.0,
+        items: [
+          CustomNavigationBarItem(
+            icon: Icon(LineIcons.home),
+            title: Text(
+              "Home",
             ),
-            BarItem(
-              icon: LineIcons.tools,
-              title: 'Tools',
-              activeColor: Colors.blue,
-              inactiveColor: Colors.lightBlue,
-            ),
-            BarItem(
-              icon: Icons.bolt_rounded,
-              title: 'Story',
-              activeColor: Colors.amber,
-              inactiveColor: Colors.lightBlue,
-            ),BarItem(
-              icon:LineIcons.userCircle,
-              title: 'About me',
-              activeColor: Colors.cyanAccent,
-              inactiveColor: Colors.lightBlue,
-            ),
-          ],
-        ),
+          ),
+          CustomNavigationBarItem(
+            icon: Icon(LineIcons.toolbox),
+            title: Text("Tools"),
+            //badgeCount: 1,
+          ),
+          CustomNavigationBarItem(
+            icon: Icon(LineIcons.lightbulbAlt),
+            title: Text("Tools"),
+          ),
+          CustomNavigationBarItem(
+            icon: Icon(LineIcons.userCircle),
+            title: Text("Me"),
+          ),
+        ],
+        currentIndex: selectedIndex,
+        onTap: (index) {
+          setState(() {
+            selectedIndex = index;
+          });
+        },
       ),
       appBar: AppBar(
         // backgroundColor: Colors.blue,
-        title: const Text('CodeFlow'),
+        title: Text('CodeFlow', style: GoogleFonts.aBeeZee()),
         leading: IconButton(
             onPressed: () => ZoomDrawer.of(context)!.toggle(),
             icon: const Icon(Icons.menu)),
@@ -108,9 +103,7 @@ class _ShowCaseState extends State<ShowCase> {
       body: PageView(
         controller: _pageController,
         physics: NeverScrollableScrollPhysics(),
-        children: [
-          Technologies(),
-        ],
+        children: [Technologies(), About()],
       ),
     );
   }

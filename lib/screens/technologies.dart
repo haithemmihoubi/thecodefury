@@ -11,6 +11,7 @@ import 'package:thecodefury/html_screens/js.dart';
 import 'package:thecodefury/html_screens/mysql.dart';
 import 'package:thecodefury/html_screens/php.dart';
 import 'package:thecodefury/html_screens/reactjs.dart';
+import 'package:thecodefury/html_screens/vuejs.dart';
 
 class Technologies extends StatelessWidget {
   final _scrollController = ScrollController(initialScrollOffset: 50.0);
@@ -304,35 +305,40 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(34.0),
-                          child: Image.asset(
-                            'assets/programming/vuejs.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => VueJs());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: EdgeInsets.all(34.0),
+                            child: Image.asset(
+                              'assets/programming/vuejs.png',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'VUE ',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.greenAccent),
-                      )
-                    ],
+                        Text(
+                          'VUE ',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.greenAccent),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
                     children: [
                       Card(
                         child: Padding(
-                          padding: const EdgeInsets.all(30.0),
+                          padding: EdgeInsets.all(30.0),
                           child: Image.asset(
                             'assets/programming/bootstrap.jpg',
                           ),
@@ -408,7 +414,7 @@ class Technologies extends StatelessWidget {
                     children: [
                       Card(
                         child: Padding(
-                          padding: const EdgeInsets.all(30.0),
+                          padding: EdgeInsets.all(30.0),
                           child: Image.asset(
                             'assets/programming/laravel.png',
                             width: 90,
