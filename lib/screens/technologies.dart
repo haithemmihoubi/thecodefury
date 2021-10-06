@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:get/get.dart';
 import 'package:thecodefury/html_screens/angular.dart';
+import 'package:thecodefury/html_screens/bootstrap.dart';
 import 'package:thecodefury/html_screens/css.dart';
 import 'package:thecodefury/html_screens/html.dart';
 import 'package:thecodefury/html_screens/js.dart';
@@ -333,28 +334,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/programming/bootstrap.jpg',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => Bootstrap());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/bootstrap.jpg',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'BOOTSTRAP',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.deepPurple),
-                      )
-                    ],
+                        Text(
+                          'BOOTSTRAP',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.deepPurple),
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
