@@ -36,14 +36,13 @@ class _ShowCaseState extends State<ShowCase> {
 
     return Scaffold(
       bottomNavigationBar: CustomNavigationBar(
-        borderRadius: Radius.circular(8),
+        borderRadius: Radius.circular(5),
         elevation: 2,
         iconSize: 30.0,
         selectedColor: Colors.lightBlue,
         strokeColor: Colors.lightBlue,
         unSelectedColor: Colors.black,
-        backgroundColor: Colors.white,
-        opacity: 2.0,
+        backgroundColor: islight ? Colors.black45 : Colors.white,
         items: [
           CustomNavigationBarItem(
             icon: Icon(LineIcons.home),
