@@ -9,7 +9,9 @@ import 'package:thecodefury/html_screens/bootstrap.dart';
 import 'package:thecodefury/html_screens/css.dart';
 import 'package:thecodefury/html_screens/html.dart';
 import 'package:thecodefury/html_screens/js.dart';
+import 'package:thecodefury/html_screens/laravel.dart';
 import 'package:thecodefury/html_screens/mysql.dart';
+import 'package:thecodefury/html_screens/nodejs.dart';
 import 'package:thecodefury/html_screens/php.dart';
 import 'package:thecodefury/html_screens/reactjs.dart';
 import 'package:thecodefury/html_screens/vuejs.dart';
@@ -392,53 +394,63 @@ class Technologies extends StatelessWidget {
                 controller: _scrollController2,
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(35.0),
-                          child: Image.asset(
-                            'assets/programming/nodejs.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => NodeJs());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(35.0),
+                            child: Image.asset(
+                              'assets/programming/nodejs.png',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'Node',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.greenAccent),
-                      )
-                    ],
+                        Text(
+                          'Node',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.greenAccent),
+                        )
+                      ],
+                    ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/programming/laravel.png',
-                            width: 90,
-                            height: 100,
+                  GestureDetector(
+                    onTap: (){
+                      Get.to(() =>Laravel() ) ;
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/laravel.png',
+                              width: 90,
+                              height: 100,
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'LARAVEL',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.red),
-                      )
-                    ],
+                        Text(
+                          'LARAVEL',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.red),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,

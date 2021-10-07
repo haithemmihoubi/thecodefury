@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../card.dart';
 
-class Bootstrap extends StatelessWidget {
+class Laravel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BackdropScaffold(
@@ -27,31 +27,31 @@ class Bootstrap extends StatelessWidget {
                 Tab(
                   icon: Icon(
                     LineIcons.youtube,
-                    color: Color(0xff563d7c),
+                    color: Color(0xffF05340),
                   ),
                   child: Text(
                     'Youtube',
-                    style: TextStyle(color: Color(0xff563d7c)),
+                    style: TextStyle(color: Color(0xffF05340)),
                   ),
                 ),
                 Tab(
                   icon: Icon(
                     LineIcons.graduationCap,
-                    color: Color(0xff563d7c),
+                    color: Color(0xffF05340),
                   ),
                   child: Text(
                     'Platform',
-                    style: TextStyle(color: Color(0xff563d7c)),
+                    style: TextStyle(color: Color(0xffF05340)),
                   ),
                 ),
                 Tab(
                   icon: Icon(
                     LineIcons.globe,
-                    color: Color(0xff563d7c),
+                    color: Color(0xffF05340),
                   ),
                   child: Text(
                     'Docs',
-                    style: TextStyle(color: Color(0xff563d7c)),
+                    style: TextStyle(color: Color(0xffF05340)),
                   ),
                 ),
               ],
@@ -74,36 +74,78 @@ class Bootstrap extends StatelessWidget {
                     ),
                   ),
                   Cards(
-                      'TheNewBaghdad',
-                      'https://www.youtube.com/watch?v=YuQ4qgdc0rs&list=PLF8OvnCBlEY0odsdGnIZWiiMD_yCtyaV7',
+                      'Mohammed Mustafa',
+                      'https://www.youtube.com/watch?v=zW1qNOuSMqg&list=PLd4ZH7drWj7DAt5osYlsya3sscPoERtGC',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Abdelrahman Gamal',
-                      'https://www.youtube.com/watch?v=R50HZWpwsos&list=PLknwEmKsW8OscL9GvjxwL7RYbcwwdIitk',
+                      'Muhammed Essa',
+                      'https://www.youtube.com/watch?v=t0QafIQF9CE&list=PLMYF6NkLrdN8V2JKIMxqMsZNPsgUj3WOK',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Elzero Web School',
-                      'https://www.youtube.com/watch?v=auFVttzUoo8&list=PLDoPjvoNmBAw24EjNUp_88S1VeaNK8Cts',
+                      'Professional Code',
+                      'https://www.youtube.com/watch?v=GiNWNd_Qpnk&list=PLCm7ZeRfGSP4NNEikwx3wUAskQHB3p-LK',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Unique Coderz Academy',
-                      'https://www.youtube.com/watch?v=xFx_KhP5lXg&list=PLtFbQRDJ11kEXHMMcWsKUaiO3b3epajIe',
+                      'WinoPaPa',
+                      'https://www.youtube.com/watch?v=L9U6lU31kUg&list=PLyr3gkJ8OBxobKzATTb7I4QrJ09pZHaQ6',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Elzero Web School',
-                      'https://www.youtube.com/watch?v=DbUjq8J6RK8&list=PLDoPjvoNmBAy0dU3C3_lNRTSTtqePEsI2',
+                      'Mora Soft',
+                      'https://www.youtube.com/watch?v=QStpeLp25A4&list=PLftLUHfDSiZ7pKXkpGCoZATm5rF6msj5A',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Mind Cms',
+                      'https://www.youtube.com/watch?v=BNtqMcfZKlE&list=PLvNu8E-aj20kYu4ixqA6LUrevTd3D-5Eh',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Professional Code',
+                      'https://www.youtube.com/watch?v=_Nj7laDeRBQ&list=PLCm7ZeRfGSP5e07XG-waxCb2kLq7M4J5m',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Professional Code',
+                      'https://www.youtube.com/watch?v=AS-Gy5aTYKg&list=PLCm7ZeRfGSP5NRdNtBfznKtFoEAuKEd2n',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Professional Code',
+                      'https://www.youtube.com/watch?v=AS-Gy5aTYKg&list=PLCm7ZeRfGSP5NRdNtBfznKtFoEAuKEd2n',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Smarian',
+                      'https://www.youtube.com/watch?v=F-PgasVGHuM&list=PLebww9DYmRqO5P57v2Sr3zFOBeaWCj8If',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Muhammed Essa',
+                      'https://www.youtube.com/watch?v=eAYBaMyVgPM&list=PLMYF6NkLrdN_918LkWzxuiP65AU1HU7zF',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -121,15 +163,36 @@ class Bootstrap extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'NSI - SIN Paul Vincensini - BASTIA',
-                      'https://www.youtube.com/watch?v=Ci4jJ5QzLv8&list=PLjLg-lnrPLK2RUzEKQkA6QhZXVPwW672S',
+                      'Nord Coders',
+                      'https://www.youtube.com/watch?v=EaSgftRyvAM&list=PLeeuvNW2FHVj4vHJRj9UDeDsXshHlnHJk',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Code & Design',
-                      'https://www.youtube.com/watch?v=gm2RCfjXS3s&list=PLxB9Im2OK6E77s7yQf2mWQjEq3ab7ARV5',
+                      'Nord Coders',
+                      'https://www.youtube.com/watch?v=2TIHglVz9NQ',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'LES TEACHERS DU NET',
+                      'https://www.youtube.com/watch?v=SbR0-dGg3tE&list=PLlxQJeQRaKDRIaejG52-KjLnTIlyi0mxt',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Faites-Le !',
+                      'https://www.youtube.com/watch?v=FmL1DPo5To4&list=PL_a1z95vBBXtslROQLjWV_33EXsF9PX5p',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'CODEURS PASSIONNÉS',
+                      'https://www.youtube.com/watch?v=d-BlI9d6GRc&list=PLhK6H-zs_Wy1Tu1agUUb2XUh4QJlIFuBu',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -147,34 +210,51 @@ class Bootstrap extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'The Net Ninja',
-                      'https://www.youtube.com/watch?v=QAgrHLtG1Yk&list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv',
+                      'Code With Dary',
+                      'https://www.youtube.com/watch?v=376vZ1wNYPA',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'ARC Tutorials',
-                      'https://www.youtube.com/watch?v=bzZyCB5QT9I&list=PLp50dWW_m40UvCxL8K83_DotLYiG4mDcM',
+                      'Code With Dary',
+                      'https://www.youtube.com/watch?v=0urHFBFHsLc&list=PL8p2I9GklV46dciS4GDzBFHBi0JVIbnzT',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'freeCodeCamp.org',
-                      'https://www.youtube.com/watch?v=iJKCj8uAHz8',
+                      'Surfside Media',
+                      'https://www.youtube.com/watch?v=RyYKXyvM3D4&list=PLz_YkiqIHesvWMGfavV8JFDQRJycfHUvD',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Brad Hussey',
-                      'https://www.youtube.com/playlist?list=PLUoqTnNH-2XyNhhLuYrrmrmV46jVw6RHF',
+                      'Onlline Web Tutor',
+                      'https://www.youtube.com/watch?v=LQYq_LlGUc8&list=PLT9miexWCpPUCBjFVFR_05Rr8pvLeoHO0',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
-
+                  Cards(
+                      'Code Step By Step',
+                      'https://www.youtube.com/watch?v=35WcRmWlHks',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'freecodecamp.org',
+                      'https://www.youtube.com/watch?v=EcYXsp78Xy8&t=12s',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Bitfumes',
+                      'https://www.youtube.com/watch?v=BXiHvgrJfkg&t=2790s',
+                      LineIcons.youtube),
                   /*This is the end of the youtube section*/
                 ],
               ),
@@ -198,25 +278,25 @@ class Bootstrap extends StatelessWidget {
                   ),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-rlnmUt9mijjUVEcK0HcoTw&utm_medium=udemyads&utm_source=aff-campaign',
+                      'https://www.udemy.com/course/the-complete-nodejs-developer-course-2/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-MGQVIXaFC3504WFPcS0chQ&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/learn-bootstrap-development-by-building-10-projects/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-0PlHrtzpPbTdVuB329iCmQ&utm_medium=udemyads&utm_source=aff-campaign',
+                      'https://www.udemy.com/course/mern-stack/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-IM3vdvhk66zMwdSiltOOEw&LSNPUBID=jU79Zysihs4&utm_source=aff-campaign&utm_medium=udemyads',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/bootstrap-5-responsive-web-design-and-development/',
+                      'https://www.udemy.com/course/nodejs-the-complete-guide/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-Aqj2e1fq8RneRKp7aAAz_A&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'eduonix',
-                      'https://www.eduonix.com/bootstrap-4-tutorial-for-professionals',
+                      'udemy',
+                      'https://www.udemy.com/course/understand-nodejs/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-aWSP1XEPDOns7uuJlSU53Q&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                 ],
               ),
@@ -238,28 +318,31 @@ class Bootstrap extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('getbootstrap.com', 'https://getbootstrap.com/',
-                      LineIcons.globe),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards('mdbootstrap.com', 'https://mdbootstrap.com/',
+                  Cards('nodejs.org', 'https://nodejs.org/en/docs/',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'w3schools.com',
-                      'https://www.w3schools.com/bootstrap4/',
-                      LineIcons.globe),
+                    'w3schools.com',
+                    'https://www.w3schools.com/nodejs/',
+                    LineIcons.globe,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Cards(
-                      'tutorialrepublic.com',
-                      'https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/',
+                      'nodeschool', 'https://nodeschool.io/', LineIcons.globe),
+                  Cards(
+                      'tutorialsteacher',
+                      'https://www.tutorialsteacher.com/nodejs',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('javatpoint.com', 'https://www.javatpoint.com/bootstrap-tutorial',
+                  Cards(
+                      'javatpoint',
+                      'https://www.javatpoint.com/nodejs-tutorial',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
@@ -276,15 +359,18 @@ class Bootstrap extends StatelessWidget {
       backLayer: Container(
         child: ListView(
           children: [
-            Image.asset(
-              'assets/boostrap.png',
-              width: 100,
-              height: 150,
+            Container(
+              child: Lottie.asset(
+                'assets/laravel.json',
+                width: 100,
+                height: 140,
+              ),
+              color: Colors.white,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Text(
-                "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.As of August 2021, Bootstrap is the tenth most starred project on GitHub, with over 152,000 stars, behind freeCodeCamp (over 328,000 stars), Vue.js framework, React library, TensorFlow and others",
+                "Laravel is a free, open-source[3] PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern and based on Symfony. Some of the features of Laravel are a modular packaging system with a dedicated dependency manager, different ways for accessing relational databases, utilities that aid in application deployment and maintenance, and its orientation toward syntactic sugar.",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -303,7 +389,7 @@ class Bootstrap extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "August 19, 2011",
+                "June 2011",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -319,7 +405,7 @@ class Bootstrap extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "Mark Otto, Jacob Thornton",
+                "Taylor Otwell",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -330,12 +416,28 @@ class Bootstrap extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
+                "Filename extension",
+                style: GoogleFonts.acme(
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
+              ),
+              trailing: Text(
+                ".php,.blade ...",
+                style: GoogleFonts.acme(
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                LineIcons.file,
+                color: Colors.white,
+              ),
+              title: Text(
                 "Written in",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "HTML, CSS, Less (v3)",
+                "PHP",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -351,14 +453,14 @@ class Bootstrap extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "CSS framework",
+                "PHP framework",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
             ),
             ListTile(
               onTap: () {
-                launch('https://getbootstrap.com/');
+                launch('https://laravel.com/');
               },
               leading: Icon(
                 LineIcons.safari,
@@ -370,7 +472,7 @@ class Bootstrap extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "getbootstrap",
+                "https://laravel.com/",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -382,20 +484,20 @@ class Bootstrap extends StatelessWidget {
               child: ListTile(
                 trailing: Icon(
                   LineIcons.arrowRight,
-                  color: Color(0xff563d7c),
+                  color: Color(0xffF05340),
                 ),
                 leading: Icon(
                   LineIcons.info,
-                  color: Color(0xff563d7c),
+                  color: Color(0xffF05340),
                 ),
                 onTap: () {
-                  launch('https://getbootstrap.com/');
+                  launch('https://laravel.com/');
                 },
                 title: Text(
-                  'For more on getbootstrap.com',
+                  'For more on laravel.com',
                   style: GoogleFonts.acme(
                       fontSize: 20,
-                      color: Color(0xff563d7c),
+                      color: Color(0xffF05340),
                       letterSpacing: 1.2),
                 ),
               ),
@@ -407,13 +509,13 @@ class Bootstrap extends StatelessWidget {
         ),
         width: MediaQuery.of(context).size.height * 0.6,
         decoration: BoxDecoration(
-          color: Color(0xff563d7c),
+          color: Color(0xffF05340),
         ),
       ),
       appBar: BackdropAppBar(
-        backgroundColor: Color(0xff563d7c),
+        backgroundColor: Color(0xffF05340),
         title: Icon(
-          LineIcons.bootstrap,
+          LineIcons.laravel,
           size: 39,
         ),
         centerTitle: true,

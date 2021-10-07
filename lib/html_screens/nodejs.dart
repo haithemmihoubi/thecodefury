@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../card.dart';
 
-class Bootstrap extends StatelessWidget {
+class NodeJs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BackdropScaffold(
@@ -27,31 +27,31 @@ class Bootstrap extends StatelessWidget {
                 Tab(
                   icon: Icon(
                     LineIcons.youtube,
-                    color: Color(0xff563d7c),
+                    color: Color(0xff3C873A),
                   ),
                   child: Text(
                     'Youtube',
-                    style: TextStyle(color: Color(0xff563d7c)),
+                    style: TextStyle(color: Color(0xff3C873A)),
                   ),
                 ),
                 Tab(
                   icon: Icon(
                     LineIcons.graduationCap,
-                    color: Color(0xff563d7c),
+                    color: Color(0xff3C873A),
                   ),
                   child: Text(
                     'Platform',
-                    style: TextStyle(color: Color(0xff563d7c)),
+                    style: TextStyle(color: Color(0xff3C873A)),
                   ),
                 ),
                 Tab(
                   icon: Icon(
                     LineIcons.globe,
-                    color: Color(0xff563d7c),
+                    color: Color(0xff3C873A),
                   ),
                   child: Text(
                     'Docs',
-                    style: TextStyle(color: Color(0xff563d7c)),
+                    style: TextStyle(color: Color(0xff3C873A)),
                   ),
                 ),
               ],
@@ -74,36 +74,29 @@ class Bootstrap extends StatelessWidget {
                     ),
                   ),
                   Cards(
-                      'TheNewBaghdad',
-                      'https://www.youtube.com/watch?v=YuQ4qgdc0rs&list=PLF8OvnCBlEY0odsdGnIZWiiMD_yCtyaV7',
+                      'Emam Academy',
+                      'https://www.youtube.com/watch?v=2jbaDlQqcoY&list=PLGhZWewM_75LQf3KvHo6HHSclmDyDazl7',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Abdelrahman Gamal',
-                      'https://www.youtube.com/watch?v=R50HZWpwsos&list=PLknwEmKsW8OscL9GvjxwL7RYbcwwdIitk',
+                      'Muhammed Essa',
+                      'https://www.youtube.com/watch?v=wY5V93lGBnY&list=PLMYF6NkLrdN8zyk4SNJboLa94GqWv4cFU',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Elzero Web School',
-                      'https://www.youtube.com/watch?v=auFVttzUoo8&list=PLDoPjvoNmBAw24EjNUp_88S1VeaNK8Cts',
+                      'Muhammed Essa',
+                      'https://www.youtube.com/watch?v=s5IcsieD8ws&list=PLMYF6NkLrdN9noGbruLWtprOPvjA4rjmC',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Unique Coderz Academy',
-                      'https://www.youtube.com/watch?v=xFx_KhP5lXg&list=PLtFbQRDJ11kEXHMMcWsKUaiO3b3epajIe',
-                      LineIcons.youtube),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'Elzero Web School',
-                      'https://www.youtube.com/watch?v=DbUjq8J6RK8&list=PLDoPjvoNmBAy0dU3C3_lNRTSTtqePEsI2',
+                      'WinoPaPa',
+                      'https://www.youtube.com/watch?v=L9U6lU31kUg&list=PLyr3gkJ8OBxobKzATTb7I4QrJ09pZHaQ6',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -121,15 +114,8 @@ class Bootstrap extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'NSI - SIN Paul Vincensini - BASTIA',
-                      'https://www.youtube.com/watch?v=Ci4jJ5QzLv8&list=PLjLg-lnrPLK2RUzEKQkA6QhZXVPwW672S',
-                      LineIcons.youtube),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'Code & Design',
-                      'https://www.youtube.com/watch?v=gm2RCfjXS3s&list=PLxB9Im2OK6E77s7yQf2mWQjEq3ab7ARV5',
+                      'Simon Dieny - Reconversion Fullstack JavaScript',
+                      'https://www.youtube.com/watch?v=Vz9RqPiyUo8&list=PLhVogk7htzNiO_cbnPqa7fkVzzRhUqQLj',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -147,34 +133,50 @@ class Bootstrap extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'The Net Ninja',
-                      'https://www.youtube.com/watch?v=QAgrHLtG1Yk&list=PL4cUxeGkcC9jE_cGvLLC60C_PeF_24pvv',
+                      'freeCodeCamp.org',
+                      'https://www.youtube.com/watch?v=Oe421EPjeBE',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'ARC Tutorials',
-                      'https://www.youtube.com/watch?v=bzZyCB5QT9I&list=PLp50dWW_m40UvCxL8K83_DotLYiG4mDcM',
+                      'Traversy Media',
+                      'https://www.youtube.com/watch?v=k_0ZzvHbNBQ&list=PLillGF-RfqbYRpji8t4SxUkMxfowG4Kqp',
                       LineIcons.youtube),
                   SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'The Net Ninja',
+                      'https://www.youtube.com/watch?v=zb3Qk8SG5Ms&list=PL4cUxeGkcC9jsz4LDYc6kv3ymONOKxwBU',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'codedamn',
+                      'https://www.youtube.com/watch?v=pgHcWAh9sFA&list=PLYxzS__5yYQmHbpKMARP04F344zYRX91I',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Daily Tuition',
+                      'https://www.youtube.com/watch?v=-27HAh8c0YU',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Coding Addict',
+                      'https://www.youtube.com/watch?v=TNV0_7QRDwY',
+                      LineIcons.youtube),SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'freeCodeCamp.org',
-                      'https://www.youtube.com/watch?v=iJKCj8uAHz8',
+                      'https://www.youtube.com/watch?v=G8uL0lFFoN0',
                       LineIcons.youtube),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'Brad Hussey',
-                      'https://www.youtube.com/playlist?list=PLUoqTnNH-2XyNhhLuYrrmrmV46jVw6RHF',
-                      LineIcons.youtube),
-                  SizedBox(
-                    height: 10,
-                  ),
-
                   /*This is the end of the youtube section*/
                 ],
               ),
@@ -198,25 +200,23 @@ class Bootstrap extends StatelessWidget {
                   ),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/bootstrap-4-from-scratch-with-5-projects/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-rlnmUt9mijjUVEcK0HcoTw&utm_medium=udemyads&utm_source=aff-campaign',
+                      'https://www.udemy.com/course/the-complete-nodejs-developer-course-2/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-MGQVIXaFC3504WFPcS0chQ&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/learn-bootstrap-development-by-building-10-projects/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-0PlHrtzpPbTdVuB329iCmQ&utm_medium=udemyads&utm_source=aff-campaign',
+                      'https://www.udemy.com/course/mern-stack/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-IM3vdvhk66zMwdSiltOOEw&LSNPUBID=jU79Zysihs4&utm_source=aff-campaign&utm_medium=udemyads',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards('udemy', 'https://www.udemy.com/course/nodejs-the-complete-guide/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-Aqj2e1fq8RneRKp7aAAz_A&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/bootstrap-5-responsive-web-design-and-development/',
-                      LineIcons.school),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'eduonix',
-                      'https://www.eduonix.com/bootstrap-4-tutorial-for-professionals',
+                      'https://www.udemy.com/course/understand-nodejs/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-aWSP1XEPDOns7uuJlSU53Q&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                 ],
               ),
@@ -238,28 +238,27 @@ class Bootstrap extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('getbootstrap.com', 'https://getbootstrap.com/',
-                      LineIcons.globe),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards('mdbootstrap.com', 'https://mdbootstrap.com/',
-                      LineIcons.globe),
+                  Cards('nodejs.org', 'https://nodejs.org/en/docs/', LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'w3schools.com',
-                      'https://www.w3schools.com/bootstrap4/',
+                      'w3schools.com', 'https://www.w3schools.com/nodejs/', LineIcons.globe,),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'nodeschool',
+                      'https://nodeschool.io/',
                       LineIcons.globe),
                   Cards(
-                      'tutorialrepublic.com',
-                      'https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/',
+                      'tutorialsteacher',
+                      'https://www.tutorialsteacher.com/nodejs',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('javatpoint.com', 'https://www.javatpoint.com/bootstrap-tutorial',
+                  Cards('javatpoint', 'https://www.javatpoint.com/nodejs-tutorial',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
@@ -276,15 +275,15 @@ class Bootstrap extends StatelessWidget {
       backLayer: Container(
         child: ListView(
           children: [
-            Image.asset(
-              'assets/boostrap.png',
+            Lottie.asset(
+              'assets/nodejs.json',
               width: 100,
-              height: 150,
+              height: 140,
             ),
             Padding(
               padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
               child: Text(
-                "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.As of August 2021, Bootstrap is the tenth most starred project on GitHub, with over 152,000 stars, behind freeCodeCamp (over 328,000 stars), Vue.js framework, React library, TensorFlow and others",
+                "Node.js is a free software platform in JavaScript, oriented towards highly competitive network event applications which must be able to scale. It uses the V8 virtual machine, the libuv library for its event loop, and implements the specifications under the MIT license. CommonJS Among the native modules of Node.js, we find http which allows the development of HTTP server. This allows, when deploying websites and web applications developed with Node.js, not to install and use web servers such as Nginx or Apache. Specifically, Node.js is a low-level environment allowing execution server-side JavaScript.",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -303,7 +302,7 @@ class Bootstrap extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "August 19, 2011",
+                "27 mai 2009",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -319,7 +318,7 @@ class Bootstrap extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "Mark Otto, Jacob Thornton",
+                "Ryan Lienhart Dahl",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -330,12 +329,28 @@ class Bootstrap extends StatelessWidget {
                 color: Colors.white,
               ),
               title: Text(
+                "Filename extension",
+                style: GoogleFonts.acme(
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
+              ),
+              trailing: Text(
+                ".jsx, .js",
+                style: GoogleFonts.acme(
+                    fontSize: 20, color: Colors.white, letterSpacing: 1.2),
+              ),
+            ),
+            ListTile(
+              leading: Icon(
+                LineIcons.file,
+                color: Colors.white,
+              ),
+              title: Text(
                 "Written in",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "HTML, CSS, Less (v3)",
+                "	C++, C et JavaScript",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -351,14 +366,14 @@ class Bootstrap extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "CSS framework",
+                "JavaScript framework",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
             ),
             ListTile(
               onTap: () {
-                launch('https://getbootstrap.com/');
+                launch('https://nodejs.org/en/');
               },
               leading: Icon(
                 LineIcons.safari,
@@ -370,7 +385,7 @@ class Bootstrap extends StatelessWidget {
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
               trailing: Text(
-                "getbootstrap",
+                "https://nodejs.org/en/",
                 style: GoogleFonts.acme(
                     fontSize: 20, color: Colors.white, letterSpacing: 1.2),
               ),
@@ -382,20 +397,20 @@ class Bootstrap extends StatelessWidget {
               child: ListTile(
                 trailing: Icon(
                   LineIcons.arrowRight,
-                  color: Color(0xff563d7c),
+                  color: Color(0xff3C873A),
                 ),
                 leading: Icon(
                   LineIcons.info,
-                  color: Color(0xff563d7c),
+                  color: Color(0xff3C873A),
                 ),
                 onTap: () {
-                  launch('https://getbootstrap.com/');
+                  launch('https://nodejs.org/en/');
                 },
                 title: Text(
-                  'For more on getbootstrap.com',
+                  'For more on nodejs.org',
                   style: GoogleFonts.acme(
                       fontSize: 20,
-                      color: Color(0xff563d7c),
+                      color: Color(0xff3C873A),
                       letterSpacing: 1.2),
                 ),
               ),
@@ -407,13 +422,13 @@ class Bootstrap extends StatelessWidget {
         ),
         width: MediaQuery.of(context).size.height * 0.6,
         decoration: BoxDecoration(
-          color: Color(0xff563d7c),
+          color: Color(0xff3C873A),
         ),
       ),
       appBar: BackdropAppBar(
-        backgroundColor: Color(0xff563d7c),
+        backgroundColor: Color(0xff3C873A),
         title: Icon(
-          LineIcons.bootstrap,
+          LineIcons.nodeJs,
           size: 39,
         ),
         centerTitle: true,
