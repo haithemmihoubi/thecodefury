@@ -210,6 +210,13 @@ class Laravel extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
+                      'laracasts',
+                      'https://laracasts.com/discuss/channels/laravel/laravel-is-it-possible-to-learn-it-in-a-few-weeks',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
                       'Code With Dary',
                       'https://www.youtube.com/watch?v=376vZ1wNYPA',
                       LineIcons.youtube),
@@ -255,6 +262,13 @@ class Laravel extends StatelessWidget {
                       'Bitfumes',
                       'https://www.youtube.com/watch?v=BXiHvgrJfkg&t=2790s',
                       LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      "Coder's Tape",
+                      'https://www.youtube.com/playlist?list=PLpzy7FIRqpGCCm3pJHtDKYHlHJclb9V9m',
+                      LineIcons.youtube),
                   /*This is the end of the youtube section*/
                 ],
               ),
@@ -276,28 +290,71 @@ class Laravel extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
+                  Cards('laracasts.com', 'https://laracasts.com/',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 20,
+                  ),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/the-complete-nodejs-developer-course-2/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-MGQVIXaFC3504WFPcS0chQ&utm_medium=udemyads&utm_source=aff-campaign',
+                      'https://www.udemy.com/course/php-with-laravel-for-beginners-become-a-master-in-laravel/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-L5iQJsq5vvYkNWPuxsFbiw&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/mern-stack/?ranMID=39197&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-IM3vdvhk66zMwdSiltOOEw&LSNPUBID=jU79Zysihs4&utm_source=aff-campaign&utm_medium=udemyads',
+                      'https://www.udemy.com/course/best-laravel/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-w7j0UfezD7EYL74B7RphZw&utm_medium=udemyads&utm_source=aff-campaign',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'laraning.com',
+                      'https://www.laraning.com/series/laravel-from-a-to-z',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'cloudways',
+                      'https://www.cloudways.com/blog/laravel-tutorials-for-beginners/',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'eduonix',
+                      'https://www.eduonix.com/php-laravel-developer-skill-bundle',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/nodejs-the-complete-guide/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-Aqj2e1fq8RneRKp7aAAz_A&utm_medium=udemyads&utm_source=aff-campaign',
+                      'https://www.udemy.com/course/laravel-beginner-fundamentals/',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'udemy',
-                      'https://www.udemy.com/course/understand-nodejs/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-aWSP1XEPDOns7uuJlSU53Q&utm_medium=udemyads&utm_source=aff-campaign',
+                      'https://www.udemy.com/course/laravel-advance-ecommerce-project/',
                       LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'udemy',
+                      'https://www.udemy.com/course/laravel-framework-build-professional-ecommerce/',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'udemy',
+                      'https://www.udemy.com/course/laravel-framework-build-professional-ecommerce/',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
                 ],
               ),
               /*DOCS BEGINING*/
@@ -318,21 +375,22 @@ class Laravel extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('nodejs.org', 'https://nodejs.org/en/docs/',
-                      LineIcons.globe),
+                  Cards('laravel.com', 'https://laravel.com/', LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                    'w3schools.com',
-                    'https://www.w3schools.com/nodejs/',
+                    'tutorialspoint.com',
+                    'https://www.tutorialspoint.com/laravel/index.htm',
                     LineIcons.globe,
                   ),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'nodeschool', 'https://nodeschool.io/', LineIcons.globe),
+                      'w3schools.in',
+                      'https://www.w3schools.in/laravel-tutorial/',
+                      LineIcons.globe),
                   Cards(
                       'tutorialsteacher',
                       'https://www.tutorialsteacher.com/nodejs',
