@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:get/get.dart';
+import 'package:thecodefury/html_screens/android.dart';
 import 'package:thecodefury/html_screens/angular.dart';
 import 'package:thecodefury/html_screens/bootstrap.dart';
 import 'package:thecodefury/html_screens/css.dart';
@@ -570,28 +571,31 @@ class Technologies extends StatelessWidget {
                 controller: _scrollController2,
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(35.0),
-                          child: Image.asset(
-                            'assets/programming/android.png',
+                  GestureDetector(
+                    onTap:() {Get.to(()=>Android());} ,
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(35.0),
+                            child: Image.asset(
+                              'assets/programming/android.png',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'ANDROID',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.greenAccent),
-                      )
-                    ],
+                        Text(
+                          'ANDROID',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.greenAccent),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
