@@ -16,6 +16,7 @@ import 'package:thecodefury/html_screens/mysql.dart';
 import 'package:thecodefury/html_screens/nodejs.dart';
 import 'package:thecodefury/html_screens/php.dart';
 import 'package:thecodefury/html_screens/reactjs.dart';
+import 'package:thecodefury/html_screens/reactnative.dart';
 import 'package:thecodefury/html_screens/springboot.dart';
 import 'package:thecodefury/html_screens/swift.dart';
 import 'package:thecodefury/html_screens/vuejs.dart';
@@ -512,7 +513,9 @@ class Technologies extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: () {Get.to(()=>SpringBoot());},
+                    onTap: () {
+                      Get.to(() => SpringBoot());
+                    },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
                       children: [
@@ -573,7 +576,9 @@ class Technologies extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 children: [
                   GestureDetector(
-                    onTap:() {Get.to(()=>Android());} ,
+                    onTap: () {
+                      Get.to(() => Android());
+                    },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
                       children: [
@@ -599,7 +604,9 @@ class Technologies extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: (){Get.to(()=>Swift());},
+                    onTap: () {
+                      Get.to(() => Swift());
+                    },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
                       children: [
@@ -624,28 +631,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(34.0),
-                          child: Image.asset(
-                            'assets/programming/reactnative.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => ReactNative());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(34.0),
+                            child: Image.asset(
+                              'assets/programming/reactnative.png',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'REACTNATIVE',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.lightBlueAccent),
-                      )
-                    ],
+                        Text(
+                          'REACTNATIVE',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.lightBlueAccent),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
