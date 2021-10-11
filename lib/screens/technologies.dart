@@ -17,6 +17,7 @@ import 'package:thecodefury/html_screens/nodejs.dart';
 import 'package:thecodefury/html_screens/php.dart';
 import 'package:thecodefury/html_screens/reactjs.dart';
 import 'package:thecodefury/html_screens/springboot.dart';
+import 'package:thecodefury/html_screens/swift.dart';
 import 'package:thecodefury/html_screens/vuejs.dart';
 
 class Technologies extends StatelessWidget {
@@ -597,28 +598,31 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/programming/swift (2).png',
+                  GestureDetector(
+                    onTap: (){Get.to(()=>Swift());},
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/swift (2).png',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'SWIFT',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.red),
-                      )
-                    ],
+                        Text(
+                          'SWIFT',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.red),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
