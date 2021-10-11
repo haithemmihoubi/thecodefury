@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import 'package:thecodefury/html_screens/angular.dart';
 import 'package:thecodefury/html_screens/bootstrap.dart';
 import 'package:thecodefury/html_screens/css.dart';
+import 'package:thecodefury/html_screens/django.dart';
 import 'package:thecodefury/html_screens/html.dart';
 import 'package:thecodefury/html_screens/js.dart';
 import 'package:thecodefury/html_screens/laravel.dart';
@@ -14,6 +15,7 @@ import 'package:thecodefury/html_screens/mysql.dart';
 import 'package:thecodefury/html_screens/nodejs.dart';
 import 'package:thecodefury/html_screens/php.dart';
 import 'package:thecodefury/html_screens/reactjs.dart';
+import 'package:thecodefury/html_screens/springboot.dart';
 import 'package:thecodefury/html_screens/vuejs.dart';
 
 class Technologies extends StatelessWidget {
@@ -157,7 +159,10 @@ class Technologies extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => JavaScript());
+                      Get.to(
+                        () => JavaScript(),
+                        curve: Curves.easeInOutSine,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.topRight,
@@ -178,7 +183,10 @@ class Technologies extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => Php());
+                      Get.to(
+                        () => Php(),
+                        curve: Curves.easeOutQuart,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.topRight,
@@ -201,7 +209,10 @@ class Technologies extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => Mysql());
+                      Get.to(
+                        () => Mysql(),
+                        curve: Curves.easeInQuad,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.topRight,
@@ -254,7 +265,10 @@ class Technologies extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => ReactJS());
+                      Get.to(
+                        () => ReactJS(),
+                        curve: Curves.slowMiddle,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -282,7 +296,10 @@ class Technologies extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => Angular());
+                      Get.to(
+                        () => Angular(),
+                        curve: Curves.fastLinearToSlowEaseIn,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -310,7 +327,10 @@ class Technologies extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => VueJs());
+                      Get.to(
+                        () => VueJs(),
+                        curve: Curves.bounceInOut,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -338,7 +358,10 @@ class Technologies extends StatelessWidget {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => Bootstrap());
+                      Get.to(
+                        () => Bootstrap(),
+                        curve: Curves.bounceInOut,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -396,7 +419,10 @@ class Technologies extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.to(() => NodeJs());
+                      Get.to(
+                        () => NodeJs(),
+                        curve: Curves.easeInOut,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -423,8 +449,11 @@ class Technologies extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: (){
-                      Get.to(() =>Laravel() ) ;
+                    onTap: () {
+                      Get.to(
+                        () => Laravel(),
+                        curve: Curves.easeInCirc,
+                      );
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -452,53 +481,61 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(34.0),
-                          child: Image.asset(
-                            'assets/programming/django.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => Django(), curve: Curves.elasticIn);
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(34.0),
+                            child: Image.asset(
+                              'assets/programming/django.png',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'DJANGO',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.amber),
-                      )
-                    ],
+                        Text(
+                          'DJANGO',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.amber),
+                        )
+                      ],
+                    ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/programming/spring.png',
-                            width: 90,
-                            height: 100,
+                  GestureDetector(
+                    onTap: () {Get.to(()=>SpringBoot());},
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/spring.png',
+                              width: 90,
+                              height: 100,
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                        Text(
+                          'SPRINGBOOT',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.lightGreen),
                         ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'SPRINGBOOT',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.lightGreen),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   const SizedBox(
                     height: 20,
@@ -826,7 +863,7 @@ class Technologies extends StatelessWidget {
               width: double.infinity,
               child: Card(
                 child: Text(
-                  'Becom  a FullStack Web Developer',
+                  'Become  a FullStack Web Developer',
                   style: GoogleFonts.aBeeZee(
                       fontSize: 20, fontWeight: FontWeight.w200),
                 ),
