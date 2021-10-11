@@ -74,29 +74,36 @@ class Swift extends StatelessWidget {
                     ),
                   ),
                   Cards(
-                      'Elzero Web School',
-                      'https://www.youtube.com/watch?v=13fv-xEAFmY&list=PLDoPjvoNmBAxr5AqK3Yz4DWYKVSmIFziw',
+                      'youtube',
+                      'https://www.youtube.com/c/Barmej/playlists?view=50&sort=dd&shelf_id=4',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Bashir Pro',
-                      'https://www.youtube.com/watch?v=8yT0QIJOKB0&list=PL1FWK-sgJ9eljz7Tm5SSUcCt5sxmwoFlC',
+                      'youtube',
+                      'https://www.youtube.com/watch?v=TD-aS6S_tHI&list=PLQaOY10EEc8bNbEBMyiJU1I-GIgs1LQfj',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'WinoPaPa',
-                      'https://www.youtube.com/watch?v=kq59jIDe0-c&list=PLyr3gkJ8OBxrt_HVPIxk9VBPoe6Kth19r',
+                      'https://www.youtube.com/watch?v=Leoo1podBEI&list=PLF8OvnCBlEY1BC20Bl73DuyW3LE5sGCUH',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'TheNewBaghdad',
+                      'https://www.youtube.com/watch?v=M4LKMCluaz4&list=PLMYF6NkLrdN8AKDZD6URTl4hxm2btk4Rl',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
                       'Muhammed Essa',
-                      'https://www.youtube.com/watch?v=M4LKMCluaz4&list=PLMYF6NkLrdN8AKDZD6URTl4hxm2btk4Rl',
+                      'https://www.youtube.com/watch?v=KAhBPBklQ90&list=PLMYF6NkLrdN-vPt8E0o0TOfDy5hJ66hUj',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -114,15 +121,29 @@ class Swift extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'Grafikart.fr',
-                      'https://www.youtube.com/watch?v=g7YKecZhFRA&list=PLjwdMgw5TTLW-mAtlR46VajrKs4dep3y0',
+                      'Romain Semler',
+                      'https://www.youtube.com/watch?v=9t7_ff98NGs&list=PLfAcySTZ-2Xx-kzOaCCJP3W9x2TqjKTl8',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Tech Wall',
-                      'https://www.youtube.com/watch?v=YrJA-9KfuRc&list=PLl3CtU4THqPZ1ARMWsmhCYzlCEMZgTBes',
+                      'Apprendre SwiftUI',
+                      'https://www.youtube.com/watch?v=_ly-8Dgfd38&list=PLsnUrZsZd75LchlK53I0Svc95REc88A_z',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'ASwiftUI',
+                      'https://www.youtube.com/watch?v=iVt3E1b2c7Y&list=PLZxAcBJLHUnRYrqCvD2JOHw5nYcM4Y-8V',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Farukh Academy',
+                      'https://www.youtube.com/watch?v=kXocJy18p0s&list=PLNv0K_Pbwb2QcDMVi7hnQQdzsN-2aaA_K',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -140,43 +161,50 @@ class Swift extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
-                      'Code Step By Step',
-                      'https://www.youtube.com/watch?v=vPjRDxUsWMo&list=PL8p2I9GklV47GZrhYwnnStpx_B5GqL1Aq',
+                      'iOS Academy',
+                      'https://www.youtube.com/watch?v=bjPENR6sHRU&list=PL5PR3UyfTWvfacnfUsvNcxIiKIgidNRoW',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Clever Programmer',
-                      'https://www.youtube.com/watch?v=ccsz9FRy-nk&list=PLC3y8-rFHvwgeQIfSDtEGVvvSEPDkL_1f',
+                      'CodeWithChris',
+                      'https://www.youtube.com/watch?v=2OZ07fklur8&list=PLMRqhzcHGw1ZqzYnpIuQAn2rcjhOtbqGX',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Codevolution',
-                      'https://www.youtube.com/watch?v=tbvguOj8C-o&t=35s',
+                      'CodeWithChris',
+                      'https://www.youtube.com/watch?v=FcsY1YPBwzQ',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Bitfumes',
-                      'https://www.youtube.com/watch?v=e-E0UB-YDRk&t=22213s',
+                      'Devslopes',
+                      'https://www.youtube.com/watch?v=mhE-Mp07RTo',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'Laracasts',
-                      'https://www.youtube.com/watch?v=Y05uRiksXXI&list=PL3VM-unCzF8iRyPotjFsgy7EfuCITvr_3',
+                      'freeCodeCamp.org',
+                      'https://www.youtube.com/watch?v=comQ1-x2a1Q',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'The Net Ninja',
-                      'https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa',
+                      'Udemy Tech',
+                      'https://www.youtube.com/watch?v=bUQz9ZWjsvc',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'CodeWithChris',
+                      'https://www.youtube.com/watch?v=ySa58y1SRy0&list=PLMRqhzcHGw1b89DXHOVA77ozWXWmuBkWX',
                       LineIcons.youtube),
                   /*This is the end of the youtube section*/
                 ],
@@ -200,24 +228,43 @@ class Swift extends StatelessWidget {
                     height: 20,
                   ),
                   Cards(
+                      'udacity',
+                      "https://www.udacity.com/course/ios-developer-nanodegree--nd003?irclickid=0GkQWb2LGxyIToh2vQx9iVURUkBXO5zb1x9qVU0&irgwc=1&utm_source=affiliate&utm_medium=&aff=2890636&utm_term=&utm_campaign=__&utm_content=&adid=786224",
+                      LineIcons.school),
+                  Cards(
                       'udemy',
-                      'https://www.udemy.com/course/vuejs-2-the-complete-guide/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-AgYp5NGhLT37jgAV95KxZw&utm_medium=udemyads&utm_source=aff-campaign',
-                      LineIcons.school),
-                  Cards(
-                      'laracasts',
-                      'https://laracasts.com/series/learn-vue-2-step-by-step',
-                      LineIcons.school),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards('vuejs.org', 'https://vuejs.org/v2/guide/',
+                      'https://www.udemy.com/course/ios11-app-development-bootcamp/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-mc_yH545jg1Q3SnRvJ8bcg&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'vuemastery',
-                      'https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/',
+                      'udemy',
+                      'https://www.udemy.com/course/ios-12-app-development-bootcamp/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-93kOkykzOYCdXWzJaDu2sw&utm_medium=udemyads&utm_source=aff-campaign',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards('objc.io', 'https://www.objc.io/', LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'hackingwithswift',
+                      'https://www.hackingwithswift.com/learn',
+                      LineIcons.school),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'designcode',
+                      'https://designcode.io/swift4',
+                      LineIcons.school),SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'udemy',
+                      'https://www.udemy.com/course/complete-ios-10-developer-course/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-irM8nRDVgTdGLG375oq2UQ&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                 ],
               ),
@@ -239,31 +286,39 @@ class Swift extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('vuejs.org', 'https://vuejs.org/', LineIcons.globe),
+                  Cards('udemy', 'https://www.udemy.com/course/ios11development/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-O5AXmqat._Nd8iJ9tEcVUw&utm_medium=udemyads&utm_source=aff-campaign', LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'vuejs', 'https://vuejs.org/v2/guide/', LineIcons.globe),
+                      'udemy', 'https://www.udemy.com/courses/search/?price=price-free&q=swift&sort=relevance&ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-RVwdotZI93N4FBHiFZOLcg&utm_source=aff-campaign&LSNPUBID=JVFxdTr9V80&utm_medium=udemyads/', LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
+                      'udemy',
+                      'https://www.udemy.com/course/learnswift/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-PQCECjxtX_nefyeY6XzOEQ&utm_medium=udemyads&utm_source=aff-campaign',
+                      LineIcons.globe),
+                  Cards(
+                      'udemy',
+                      'https://www.udemy.com/course/build-great-ios-apps-with-swift/?ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-9Lvs_RXU8WOfm4eOtYu6Dg&LSNPUBID=JVFxdTr9V80&utm_source=aff-campaign&utm_medium=udemyads',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 10,
+                  ), Cards(
                       'codecademy',
-                      'https://www.codecademy.com/courses/learn-vue-js/lessons/vue-introduction/exercises/front-end-frameworks',
+                     "https://www.codecademy.com/learn/learn-swift" ,
                       LineIcons.globe),
-                  Cards(
-                      'coursetro',
-                      'https://coursetro.com/courses/23/Vue-Tutorial-in-2018---Learn-Vue.js-by-Example',
+                  SizedBox(
+                    height: 10,
+                  ),Cards(
+                      'classcentral',
+                     "https://www.classcentral.com/subject/swift" ,
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('scrimba', 'https://scrimba.com/playlist/pXKqta',
-                      LineIcons.globe),
-                  SizedBox(
-                    height: 10,
-                  ),
+
                   SizedBox(
                     height: 20,
                   ),
