@@ -23,6 +23,7 @@ import 'package:thecodefury/html_screens/springboot.dart';
 import 'package:thecodefury/html_screens/swift.dart';
 import 'package:thecodefury/html_screens/vuejs.dart';
 import 'package:thecodefury/lang_screens/c.dart';
+import 'package:thecodefury/lang_screens/python.dart';
 
 class Technologies extends StatelessWidget {
   final _scrollController = ScrollController(initialScrollOffset: 50.0);
@@ -776,28 +777,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/programming/python.png',
+                  GestureDetector(
+                    onTap: (){
+                      Get.to(()=>Python());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/python.png',
+                            ),
                           ),
+                          shadowColor: Colors.amber,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.amber,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'PYTHON',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.amber),
-                      )
-                    ],
+                        Text(
+                          'PYTHON',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.amber),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
