@@ -11,6 +11,7 @@ import 'package:thecodefury/html_screens/css.dart';
 import 'package:thecodefury/html_screens/django.dart';
 import 'package:thecodefury/html_screens/flutter.dart';
 import 'package:thecodefury/html_screens/html.dart';
+import 'package:thecodefury/html_screens/java.dart';
 import 'package:thecodefury/html_screens/js.dart';
 import 'package:thecodefury/html_screens/laravel.dart';
 import 'package:thecodefury/html_screens/mysql.dart';
@@ -718,28 +719,33 @@ class Technologies extends StatelessWidget {
                 controller: _scrollController2,
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(35.0),
-                          child: Image.asset(
-                            'assets/programming/java.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => Java());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(35.0),
+                            child: Image.asset(
+                              'assets/programming/java.png',
+                            ),
                           ),
+                          shadowColor: Colors.blue,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.blue,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'JAVA',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.blue),
-                      )
-                    ],
+                        Text(
+                          'JAVA',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.blue),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
