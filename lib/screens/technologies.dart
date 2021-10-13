@@ -9,6 +9,7 @@ import 'package:thecodefury/html_screens/angular.dart';
 import 'package:thecodefury/html_screens/bootstrap.dart';
 import 'package:thecodefury/html_screens/css.dart';
 import 'package:thecodefury/html_screens/django.dart';
+import 'package:thecodefury/html_screens/flutter.dart';
 import 'package:thecodefury/html_screens/html.dart';
 import 'package:thecodefury/html_screens/js.dart';
 import 'package:thecodefury/html_screens/laravel.dart';
@@ -659,28 +660,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/programming/Flutter.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => Flutter());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/Flutter.png',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                        Text(
+                          'FLUTTER',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.lightBlueAccent),
                         ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'FLUTTER',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.lightBlueAccent),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ],
               ),
