@@ -22,6 +22,7 @@ import 'package:thecodefury/html_screens/reactnative.dart';
 import 'package:thecodefury/html_screens/springboot.dart';
 import 'package:thecodefury/html_screens/swift.dart';
 import 'package:thecodefury/html_screens/vuejs.dart';
+import 'package:thecodefury/lang_screens/c.dart';
 
 class Technologies extends StatelessWidget {
   final _scrollController = ScrollController(initialScrollOffset: 50.0);
@@ -747,28 +748,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/programming/c.png',
+                  GestureDetector(
+                    onTap: (){
+                      Get.to(()=>C()) ;
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/c.png',
+                            ),
                           ),
+                          shadowColor: Colors.lightBlue,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.lightBlue,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'C',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.deepPurple),
-                      )
-                    ],
+                        Text(
+                          'C',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.deepPurple),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,

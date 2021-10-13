@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
-import 'package:thecodefury/html_screens/angular.dart';
+import 'package:thecodefury/lang_screens/angular.dart';
 
 class DRAWER extends StatelessWidget {
   const DRAWER({Key? key}) : super(key: key);
