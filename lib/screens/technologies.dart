@@ -9,6 +9,7 @@ import 'package:thecodefury/lang_screens/angular.dart';
 import 'package:thecodefury/lang_screens/bootstrap.dart';
 import 'package:thecodefury/lang_screens/cplus.dart';
 import 'package:thecodefury/lang_screens/css.dart';
+import 'package:thecodefury/lang_screens/dart.dart';
 import 'package:thecodefury/lang_screens/django.dart';
 import 'package:thecodefury/lang_screens/flutter.dart';
 import 'package:thecodefury/lang_screens/html.dart';
@@ -751,8 +752,8 @@ class Technologies extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: (){
-                      Get.to(()=>C()) ;
+                    onTap: () {
+                      Get.to(() => C());
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -779,8 +780,8 @@ class Technologies extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    onTap: (){
-                      Get.to(()=>Python());
+                    onTap: () {
+                      Get.to(() => Python());
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
@@ -806,9 +807,10 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  GestureDetector(onTap: (){
-                    Get.to(()=>Cplus()) ;
-                  },
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => Cplus());
+                    },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
                       children: [
@@ -833,28 +835,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(34.0),
-                          child: Image.asset(
-                            'assets/programming/dart.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => Dart());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(34.0),
+                            child: Image.asset(
+                              'assets/programming/dart.png',
+                            ),
                           ),
+                          shadowColor: Colors.blue,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.blue,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'DART',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.blue),
-                      )
-                    ],
+                        Text(
+                          'DART',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.blue),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,

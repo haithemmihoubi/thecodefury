@@ -92,6 +92,20 @@ class Flutter extends StatelessWidget {
                     height: 10,
                   ),
                   Cards(
+                      'Scholar Tech',
+                      'https://www.youtube.com/channel/UC9a1yj1xV2zeyiFPZ1gGYGw/playlists',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'alam aal barmaja',
+                      'https://www.youtube.com/c/ProgrammingWorldApps/playlists',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
                       'Muhammed Essa',
                       'https://www.youtube.com/watch?v=OU0CBOrPZss&list=PLMYF6NkLrdN9YGZLeXIot4sJe9iQuBrB-',
                       LineIcons.youtube),
@@ -115,6 +129,20 @@ class Flutter extends StatelessWidget {
                   Cards(
                       'Waelabohamza',
                       'https://www.youtube.com/watch?v=u2g5jfe7UVg&list=PL93xoMrxRJIve-GSKU61X6okh5pncG0sH&ab_channel=Waelabohamza',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Php Anonymous',
+                      'https://www.youtube.com/watch?v=kggAr5GhPFw&list=PLcfD4HARQRF9ToPIW_kdQjBg6ARV2BXYL',
+                      LineIcons.youtube),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'Muhammed Essa',
+                      'https://www.youtube.com/watch?v=Lqew4AU6vZk&list=PLMYF6NkLrdN9PcxE9vPtnfvGTm95STX65',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -379,7 +407,10 @@ class Flutter extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('tutorialspoint', 'https://www.tutorialspoint.com/flutter/index.htm', LineIcons.globe),
+                  Cards(
+                      'tutorialspoint',
+                      'https://www.tutorialspoint.com/flutter/index.htm',
+                      LineIcons.globe),
                   Cards(
                       'developers.google',
                       'https://developers.google.com/learn/pathways/intro-to-flutter',
@@ -387,9 +418,7 @@ class Flutter extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'flutterlearn',
-                      'https://flutterlearn.com/',
+                  Cards('flutterlearn', 'https://flutterlearn.com/',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
@@ -399,7 +428,6 @@ class Flutter extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-
                 ],
               ),
             ],
