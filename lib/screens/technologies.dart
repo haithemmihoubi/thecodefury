@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import 'package:thecodefury/lang_screens/android.dart';
 import 'package:thecodefury/lang_screens/angular.dart';
 import 'package:thecodefury/lang_screens/bootstrap.dart';
+import 'package:thecodefury/lang_screens/cplus.dart';
 import 'package:thecodefury/lang_screens/css.dart';
 import 'package:thecodefury/lang_screens/django.dart';
 import 'package:thecodefury/lang_screens/flutter.dart';
@@ -805,28 +806,32 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(34.0),
-                          child: Image.asset(
-                            'assets/programming/c++.png',
+                  GestureDetector(onTap: (){
+                    Get.to(()=>Cplus()) ;
+                  },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(34.0),
+                            child: Image.asset(
+                              'assets/programming/c++.png',
+                            ),
                           ),
+                          shadowColor: Colors.blue,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.blue,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'C++',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.blue),
-                      )
-                    ],
+                        Text(
+                          'C++',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.blue),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
