@@ -275,11 +275,13 @@ class Go extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
+                  Cards('golangdojo', 'htthttps://golangdojo.com/resources/',
+                      LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                 ],
               ),

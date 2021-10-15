@@ -24,6 +24,7 @@ import 'package:thecodefury/lang_screens/reactjs.dart';
 import 'package:thecodefury/lang_screens/reactnative.dart';
 import 'package:thecodefury/lang_screens/springboot.dart';
 import 'package:thecodefury/lang_screens/swift.dart';
+import 'package:thecodefury/lang_screens/typescript.dart';
 import 'package:thecodefury/lang_screens/vuejs.dart';
 import 'package:thecodefury/lang_screens/c.dart';
 import 'package:thecodefury/lang_screens/python.dart';
@@ -63,12 +64,12 @@ class Technologies extends StatelessWidget {
             ),
             Center(
                 child: Text(
-              ' NEVER GIVE UP',
-              style: GoogleFonts.acme(
-                  fontSize: 25,
-                  decorationColor: Colors.blue,
-                  fontStyle: FontStyle.italic),
-            )),
+                  ' NEVER GIVE UP',
+                  style: GoogleFonts.acme(
+                      fontSize: 25,
+                      decorationColor: Colors.blue,
+                      fontStyle: FontStyle.italic),
+                )),
             Card(
               shadowColor: Colors.cyan,
               elevation: 0,
@@ -87,7 +88,7 @@ class Technologies extends StatelessWidget {
                     autoPlay: true,
                     autoPlayInterval: const Duration(seconds: 3),
                     autoPlayAnimationDuration:
-                        const Duration(milliseconds: 800),
+                    const Duration(milliseconds: 800),
                     autoPlayCurve: Curves.fastOutSlowIn,
                     enlargeCenterPage: true,
                     scrollDirection: Axis.horizontal,
@@ -170,7 +171,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => JavaScript(),
+                            () => JavaScript(),
                         curve: Curves.easeInOutSine,
                       );
                     },
@@ -194,7 +195,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Php(),
+                            () => Php(),
                         curve: Curves.easeOutQuart,
                       );
                     },
@@ -220,7 +221,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Mysql(),
+                            () => Mysql(),
                         curve: Curves.easeInQuad,
                       );
                     },
@@ -236,6 +237,31 @@ class Technologies extends StatelessWidget {
                             padding: const EdgeInsets.all(35.0),
                             child: Image.asset(
                               'assets/programming/mysql.png',
+                            ),
+                          ),
+                          elevation: 0,
+                        ),
+                      ],
+                    ),
+                  ), GestureDetector(
+                    onTap: () {
+                      Get.to(
+                            () => TyperScript(),
+                        curve: Curves.easeInQuad,
+                      );
+                    },
+                    child: Stack(
+                      alignment: Alignment.topRight,
+                      children: [
+                        Card(
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(35.0),
+                            child: Image.asset(
+                              'assets/ts.png',
                             ),
                           ),
                           elevation: 0,
@@ -276,7 +302,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => ReactJS(),
+                            () => ReactJS(),
                         curve: Curves.slowMiddle,
                       );
                     },
@@ -307,7 +333,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Angular(),
+                            () => Angular(),
                         curve: Curves.fastLinearToSlowEaseIn,
                       );
                     },
@@ -338,7 +364,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => VueJs(),
+                            () => VueJs(),
                         curve: Curves.bounceInOut,
                       );
                     },
@@ -369,7 +395,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Bootstrap(),
+                            () => Bootstrap(),
                         curve: Curves.bounceInOut,
                       );
                     },
@@ -430,7 +456,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => NodeJs(),
+                            () => NodeJs(),
                         curve: Curves.easeInOut,
                       );
                     },
@@ -461,7 +487,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Laravel(),
+                            () => Laravel(),
                         curve: Curves.easeInCirc,
                       );
                     },
@@ -864,9 +890,9 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  GestureDetector (
+                  GestureDetector(
                     onTap: () {
-                      Get.to(()=>Go());
+                      Get.to(() => Go());
                     },
                     child: Stack(
                       alignment: Alignment.bottomCenter,
