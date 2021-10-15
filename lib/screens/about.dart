@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
-class About extends StatelessWidget {
-  const About({Key? key}) : super(key: key);
 
+class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(child: Center(child: Text('hello')),);
+    return Scaffold(
+      appBar: AppBar(),
+      body: Container(
+        child: Center(child: Text('hello')),
+      ),
+    );
   }
 }

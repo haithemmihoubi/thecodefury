@@ -20,14 +20,11 @@ class ShowCase extends StatefulWidget {
 }
 
 class _ShowCaseState extends State<ShowCase> {
-  late PageController _pageController;
-
   int selectedIndex = 0;
 
   @override
   void initState() {
     super.initState();
-    _pageController = PageController(initialPage: selectedIndex);
   }
 
   @override
@@ -51,13 +48,14 @@ class _ShowCaseState extends State<ShowCase> {
             ),
           ),
           CustomNavigationBarItem(
-            icon: Icon(LineIcons.toolbox),
+            icon: GestureDetector(
+              child: Icon(LineIcons.toolbox),
+              onTap: () {
+                Get.to(() => About());
+              },
+            ),
             title: Text("Tools"),
             //badgeCount: 1,
-          ),
-          CustomNavigationBarItem(
-            icon: Icon(LineIcons.lightbulbAlt),
-            title: Text("Tools"),
           ),
           CustomNavigationBarItem(
             icon: Icon(LineIcons.userCircle),
@@ -65,11 +63,12 @@ class _ShowCaseState extends State<ShowCase> {
           ),
         ],
         currentIndex: selectedIndex,
-        onTap: (index) {
+        onTap: (int index) {
           setState(() {
             selectedIndex = index;
           });
         },
+        blurEffect: true,
       ),
       appBar: AppBar(
         // backgroundColor: Colors.blue,
@@ -99,10 +98,17 @@ class _ShowCaseState extends State<ShowCase> {
           ),
         ],
       ),
+      extendBody: true,
       body: PageView(
-        controller: _pageController,
-        physics: NeverScrollableScrollPhysics(),
-        children: [Technologies(), About()],
+        onPageChanged: (int index) => setState(() {
+          selectedIndex = index;
+        }),
+        //physics: NeverScrollableScrollPhysics(),
+        children: [
+          Technologies(),
+          About(),
+          Technologies(),
+        ],
       ),
     );
   }
