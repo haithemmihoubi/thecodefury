@@ -12,6 +12,7 @@ import 'package:thecodefury/lang_screens/css.dart';
 import 'package:thecodefury/lang_screens/dart.dart';
 import 'package:thecodefury/lang_screens/django.dart';
 import 'package:thecodefury/lang_screens/flutter.dart';
+import 'package:thecodefury/lang_screens/go.dart';
 import 'package:thecodefury/lang_screens/html.dart';
 import 'package:thecodefury/lang_screens/java.dart';
 import 'package:thecodefury/lang_screens/js.dart';
@@ -863,28 +864,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(55),
-                          child: Image.asset(
-                            'assets/programming/go.png',
+                  GestureDetector (
+                    onTap: () {
+                      Get.to(()=>Go());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(55),
+                            child: Image.asset(
+                              'assets/programming/go.png',
+                            ),
                           ),
+                          shadowColor: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.cyan,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                        Text(
+                          'GO',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.cyan),
                         ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'GO',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.cyan),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
