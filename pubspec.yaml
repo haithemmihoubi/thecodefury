@@ -40,6 +40,7 @@ dependencies:
   backdrop: ^0.6.2
   flutter_native_splash: ^1.2.4
   custom_navigation_bar:
+  circular_menu :
 
 
 dev_dependencies:

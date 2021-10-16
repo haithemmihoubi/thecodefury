@@ -17,6 +17,7 @@ import 'package:thecodefury/lang_screens/html.dart';
 import 'package:thecodefury/lang_screens/java.dart';
 import 'package:thecodefury/lang_screens/js.dart';
 import 'package:thecodefury/lang_screens/laravel.dart';
+import 'package:thecodefury/lang_screens/mern.dart';
 import 'package:thecodefury/lang_screens/mysql.dart';
 import 'package:thecodefury/lang_screens/nodejs.dart';
 import 'package:thecodefury/lang_screens/php.dart';
@@ -978,28 +979,33 @@ class Technologies extends StatelessWidget {
                 controller: _scrollController2,
                 scrollDirection: Axis.horizontal,
                 children: [
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(35.0),
-                          child: Image.asset(
-                            'assets/programming/mern.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => MERN());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(35.0),
+                            child: Image.asset(
+                              'assets/programming/mern.png',
+                            ),
                           ),
+                          shadowColor: Colors.blue,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.blue,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'MERN STACK',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.blue),
-                      )
-                    ],
+                        Text(
+                          'MERN STACK',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.blue),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,

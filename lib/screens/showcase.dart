@@ -20,20 +20,24 @@ class ShowCase extends StatefulWidget {
 }
 
 class _ShowCaseState extends State<ShowCase> {
-  int selectedIndex = 0;
-
   @override
   void initState() {
     super.initState();
   }
 
+  final Screens = [
+    Technologies(),
+    About(),
+    Technologies(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     bool islight = Get.isDarkMode;
-
+    int selectedIndex = 0;
     return Scaffold(
       bottomNavigationBar: CustomNavigationBar(
-        borderRadius: Radius.circular(5),
+        borderRadius: Radius.circular(15),
         elevation: 2,
         iconSize: 30.0,
         selectedColor: Colors.lightBlue,
@@ -55,6 +59,7 @@ class _ShowCaseState extends State<ShowCase> {
               },
             ),
             title: Text("Tools"),
+
             //badgeCount: 1,
           ),
           CustomNavigationBarItem(
@@ -69,6 +74,7 @@ class _ShowCaseState extends State<ShowCase> {
           });
         },
         blurEffect: true,
+
       ),
       appBar: AppBar(
         // backgroundColor: Colors.blue,
@@ -99,17 +105,9 @@ class _ShowCaseState extends State<ShowCase> {
         ],
       ),
       extendBody: true,
-      body: PageView(
-        onPageChanged: (int index) => setState(() {
-          selectedIndex = index;
-        }),
-        //physics: NeverScrollableScrollPhysics(),
-        children: [
-          Technologies(),
-          About(),
-          Technologies(),
-        ],
-      ),
+      body: PageView(children: [
+        Screens[selectedIndex]
+        ],),
     );
   }
 }
