@@ -17,7 +17,9 @@ import 'package:thecodefury/lang_screens/html.dart';
 import 'package:thecodefury/lang_screens/java.dart';
 import 'package:thecodefury/lang_screens/js.dart';
 import 'package:thecodefury/lang_screens/laravel.dart';
+import 'package:thecodefury/lang_screens/mean.dart';
 import 'package:thecodefury/lang_screens/mern.dart';
+import 'package:thecodefury/lang_screens/mevn.dart';
 import 'package:thecodefury/lang_screens/mysql.dart';
 import 'package:thecodefury/lang_screens/nodejs.dart';
 import 'package:thecodefury/lang_screens/php.dart';
@@ -1007,6 +1009,139 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
+                  GestureDetector(
+                    onTap: () => Get.to(() => MEAN()),
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/mean.png',
+                            ),
+                          ),
+                          shadowColor: Colors.red,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
+                        ),
+                        Text(
+                          'MEAN STACK',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.red),
+                        )
+                      ],
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () => Get.to(() => MEVN()),
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/programming/mevn.png',
+                            ),
+                          ),
+                          shadowColor: Colors.green,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
+                        ),
+                        Text(
+                          'MEVN STACK',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.green),
+                        )
+                      ],
+                    ),
+                  ),
+                  Stack(
+                    alignment: Alignment.bottomCenter,
+                    children: [
+                      Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(34.0),
+                          child: Image.asset(
+                            'assets/programming/laravue.png',
+                          ),
+                        ),
+                        shadowColor: Colors.redAccent,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        elevation: 0,
+                      ),
+                      Text(
+                        'LARAVUE STACK',
+                        style: GoogleFonts.abrilFatface(
+                            fontSize: 20, color: Colors.redAccent),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Container(
+              width: double.infinity,
+              child: Card(
+                child: Text(
+                  'Become a Database administrator',
+                  style: GoogleFonts.aBeeZee(
+                      fontSize: 20, fontWeight: FontWeight.w200),
+                ),
+                shadowColor: Colors.cyan,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                elevation: 0,
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Container(
+              height: 150,
+              child: ListView(
+                controller: _scrollController2,
+                scrollDirection: Axis.horizontal,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(() => MERN());
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(35.0),
+                            child: Image.asset(
+                              'assets/programming/mysql.png',
+                            ),
+                          ),
+                          shadowColor: Colors.blue,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
+                        ),
+                        Text(
+                          'MYSQL',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.blue),
+                        )
+                      ],
+                    ),
+                  ),
                   Stack(
                     alignment: Alignment.bottomCenter,
                     children: [
@@ -1014,7 +1149,7 @@ class Technologies extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(30.0),
                           child: Image.asset(
-                            'assets/programming/mean.png',
+                            'assets/oracle.png',
                           ),
                         ),
                         shadowColor: Colors.red,
@@ -1024,7 +1159,7 @@ class Technologies extends StatelessWidget {
                         elevation: 0,
                       ),
                       Text(
-                        'MEAN STACK',
+                        'ORACLE DATABASE',
                         style: GoogleFonts.abrilFatface(
                             fontSize: 20, color: Colors.red),
                       )
@@ -1037,7 +1172,7 @@ class Technologies extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(30.0),
                           child: Image.asset(
-                            'assets/programming/mevn.png',
+                            'assets/-mongodb.png',
                           ),
                         ),
                         shadowColor: Colors.green,
@@ -1047,7 +1182,7 @@ class Technologies extends StatelessWidget {
                         elevation: 0,
                       ),
                       Text(
-                        'MEVN STACK',
+                        'MONGODB',
                         style: GoogleFonts.abrilFatface(
                             fontSize: 20, color: Colors.green),
                       )
@@ -1102,9 +1237,6 @@ class Technologies extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 30,
-            )
           ],
         ),
       ),

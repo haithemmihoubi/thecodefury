@@ -7,6 +7,8 @@ import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:thecodefury/lang_screens/nodejs.dart';
+import 'package:thecodefury/lang_screens/reactjs.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../card.dart';
@@ -24,15 +26,11 @@ TabController? tabController;
 final screens = [
   MernHomePage(),
   ListView(
-
     children: [
-
-
-          Image.asset(
-            'assets/beginner.png',
-            fit: BoxFit.cover,
-          ),
-
+      Image.asset(
+        'assets/mean.jpg',
+        fit: BoxFit.cover,
+      ),
       SizedBox(
         height: 20,
       ),
@@ -40,242 +38,125 @@ final screens = [
         width: 20,
         child: Center(
           child: Text(
-            'Arabic',
+            'The MERN stack is JavaScript-based framework for developing web applications. MEAN is named after MongoDB, Express, React , and Node, the four key technologies that make up the layers of the stack.',
             style: GoogleFonts.aBeeZee(fontSize: 20),
+            textAlign: TextAlign.center,
           ),
         ),
       ),
-      Cards(
-          'Khalid Elshafie',
-          'https://www.youtube.com/watch?v=yPrvFxesEyQ&list=PL_aOZuct6oAoz9FY-gd_hGUIq88q9aJkU',
-          LineIcons.youtube),
-      SizedBox(
-        height: 10,
-      ),
-      Cards(
-          'CodeWithZeyad',
-          'https://www.youtube.com/c/CodeWithZeyad/playlists',
-          LineIcons.youtube),
-      SizedBox(
-        height: 10,
-      ),
-      SizedBox(
-        height: 10,
-      ),
-      Container(
-        width: 20,
-        child: Center(
-          child: Text(
-            'English',
-            style: GoogleFonts.aBeeZee(fontSize: 20),
-          ),
+      GestureDetector(
+        onTap: () {
+          Get.to(
+            () => ReactJS(),
+            curve: Curves.slowMiddle,
+          );
+        },
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(35.0),
+                child: Image.asset(
+                  'assets/programming/react.png',
+                ),
+              ),
+              shadowColor: Colors.cyan,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              elevation: 0,
+            ),
+            Text(
+              'REACT',
+              style: GoogleFonts.abrilFatface(
+                  fontSize: 20, color: Colors.lightBlueAccent),
+            )
+          ],
         ),
       ),
       SizedBox(
-        height: 10,
+        height: 20,
       ),
-      Cards(
-          'MERN stack mix:youtube',
-          'https://www.youtube.com/watch?v=I6ypD7qv3Z8&list=PLzuYCzVFRuOKO7VNdH91g6wz9xZCAQ1rH',
-          LineIcons.youtube),
+      GestureDetector(
+        onTap: () {
+          launch('https://www.mongodb.com/');
+        },
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(30.0),
+                child: Image.asset(
+                  'assets/-mongodb.png',
+                  height: 150,
+                ),
+              ),
+              shadowColor: Colors.green,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              elevation: 0,
+            ),
+            Text(
+              'Mongo Databse ',
+              style:
+                  GoogleFonts.abrilFatface(fontSize: 20, color: Colors.green),
+            )
+          ],
+        ),
+      ),
       SizedBox(
-        height: 10,
+        height: 20,
       ),
-      Cards('Code with Ahsan', 'https://www.youtube.com/watch?v=E8vYlkx9EQw',
-          LineIcons.youtube),
+      GestureDetector(
+        onTap: () {
+          Get.to(
+            () => NodeJs(),
+            curve: Curves.easeInOut,
+          );
+        },
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            Card(
+              child: Padding(
+                padding: const EdgeInsets.all(35.0),
+                child: Image.asset(
+                  'assets/programming/nodejs.png',
+                  height: 150,
+                ),
+              ),
+              shadowColor: Colors.cyan,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              elevation: 0,
+            ),
+            Text(
+              'Node',
+              style: GoogleFonts.abrilFatface(
+                  fontSize: 20, color: Colors.greenAccent),
+            )
+          ],
+        ),
+      ),
       SizedBox(
-        height: 10,
+        height: 20,
       ),
-      Cards(
-          'Clever Programmer',
-          'https://www.youtube.com/playlist?list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP',
-          LineIcons.youtube),
+      Image.asset(
+        'assets/happy coding.png',
+        fit: BoxFit.cover,
+      ),
       SizedBox(
-        height: 10,
+        height: 20,
       ),
-      Cards('Sonny Sangha', 'https://www.youtube.com/watch?v=tbvguOj8C-o&t=35s',
-          LineIcons.youtube),
-      SizedBox(
-        height: 10,
+      Lottie.asset(
+        'assets/happy-developer.json',
       ),
-      Cards(
-          'WB Web Development Solutions',
-          'https://www.youtube.com/watch?v=EceJQ05KTf4&list=PLwoh6bBAszPpLzvKx1N3FUQ9z5m2UIqtL',
-          LineIcons.youtube),
-      SizedBox(
-        height: 10,
-      ),
-      Cards('LamaDev', 'https://www.youtube.com/c/LamaDev/playlists',
-          LineIcons.youtube),
-      SizedBox(
-        height: 10,
-      ),
-      Cards('Chaoo Charles', 'https://www.youtube.com/watch?v=KNZZZ3pbqco',
-          LineIcons.youtube),
-      SizedBox(
-        height: 10,
-      ),
-      Cards(
-          'JavaScriptMastery',
-          'https://www.youtube.com/c/JavaScriptMastery/playlists',
-          LineIcons.youtube),
-      SizedBox(
-        height: 10,
-      ),
-      Cards(
-          'edurekaIN',
-          'https://www.youtube.com/c/edurekaIN/search?query=mern',
-          LineIcons.youtube),
-      SizedBox(
-        height: 10,
-      ),
-      Cards(
-          'Dented Code',
-          'https://www.youtube.com/watch?v=20V0Pd4tdT8&list=PLtPNAX49WUFP67x9OTuaFF6xZ2IABA_HW',
-          LineIcons.youtube),
-      /*This is the end of the youtube section*/
     ],
   ),
-  /*PLATFORM BEGIN
-  ListView(
-    children: [
-      const SizedBox(
-        height: 30,
-      ),
-      Container(
-        width: 20,
-        child: Center(
-          child: Text(
-            'Paid  Courses',
-            style: GoogleFonts.aBeeZee(fontSize: 20),
-          ),
-        ),
-      ),
-      SizedBox(
-        height: 20,
-      ),
-      Cards(
-          'Clever Programmer',
-          'https://www.cleverprogrammer.com/fem-optin-fit-org?utm_source=youtube&utm_medium=yt-description&utm_campaign=fem-all-day&utm_content=7-oct-20-reactjs-12-hour-tutorial-2021',
-          LineIcons.school),
-      Cards(
-          'udemy',
-          'https://www.udemy.com/course/react-the-complete-guide-incl-redux/',
-          LineIcons.school),
-      SizedBox(
-        height: 10,
-      ),
-      Cards(
-          'udemy',
-          'https://www.eduonix.com/react-the-complete-guide-incl-redux',
-          LineIcons.school),
-      SizedBox(
-        height: 10,
-      ),
-      Cards('eduonix', 'https://www.eduonix.com/new_dashboard/master-reactjs',
-          LineIcons.school),
-    ],
-  ),
-  DOCS BEGINING
-  ListView(
-    children: [
-      SizedBox(
-        height: 20,
-      ),
-      Container(
-        width: 20,
-        child: Center(
-          child: Text(
-            'free courses ',
-            style: GoogleFonts.aBeeZee(fontSize: 20),
-          ),
-        ),
-      ),
-      SizedBox(
-        height: 10,
-      ),
-      Cards('reactjs.org', 'https://fr.reactjs.org/tutorial/tutorial.html',
-          LineIcons.globe),
-      SizedBox(
-        height: 10,
-      ),
-      Cards(
-          'openclassrooms',
-          'https://openclassrooms.com/fr/courses/4664381-realisez-une-application-web-avec-react-js',
-          LineIcons.globe),
-      SizedBox(
-        height: 10,
-      ),
-      Cards('blog.glitch', 'https://blog.glitch.com/post/react-starter-kit',
-          LineIcons.globe),
-      Cards('codecademy', 'https://www.codecademy.com/learn/react-101',
-          LineIcons.globe),
-      SizedBox(
-        height: 10,
-      ),
-      Cards(
-          'egghead',
-          'https://egghead.io/courses/react-with-class-components-fundamentals-4351f8bb',
-          LineIcons.globe),
-      SizedBox(
-        height: 10,
-      ),
-      Cards('learn-html', 'https://www.learn-html.org/', LineIcons.globe),
-      SizedBox(
-        height: 10,
-      ),
-      Cards(
-          'free-react', 'https://ui.dev/free-react-bootcamp/', LineIcons.globe),
-      SizedBox(
-        height: 10,
-      ),
-      Cards('scrimba', 'https://scrimba.com/learn/learnreact', LineIcons.globe),
-      SizedBox(
-        height: 10,
-      ),
-      Cards('tutorialrepublic',
-          'https://www.tutorialrepublic.com/html-tutorial/', LineIcons.globe),
-      SizedBox(
-        height: 20,
-      ),
-      Container(
-        width: 20,
-        child: Center(
-          child: Text(
-            'Paid courses ',
-            style: GoogleFonts.aBeeZee(fontSize: 20),
-          ),
-        ),
-      ),
-      Cards('frontendmasters', 'https://frontendmasters.com/courses/',
-          LineIcons.globe),
-      SizedBox(
-        height: 20,
-      ),
-      Cards('egghead.io', 'https://egghead.io/q/react', LineIcons.globe),
-      SizedBox(
-        height: 20,
-      ),
-      Cards('newline.co', 'https://www.newline.co/fullstack-react/',
-          LineIcons.globe),
-      SizedBox(
-        height: 20,
-      ),
-      Cards('reactforbeginners', 'https://reactforbeginners.com/',
-          LineIcons.globe),
-      SizedBox(
-        height: 20,
-      ),
-      Cards('designcode', 'https://designcode.io/react', LineIcons.globe),
-      SizedBox(
-        height: 20,
-      ),
-      Cards('learnreact', 'https://learnreact.design/', LineIcons.globe),
-      SizedBox(
-        height: 20,
-      ),
-    ],
-  ),*/
 ];
 
 class _MERNState extends State<MERN> {
