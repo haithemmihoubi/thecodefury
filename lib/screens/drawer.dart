@@ -2,8 +2,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:thecodefury/lang_screens/angular.dart';
+import 'package:thecodefury/lang_screens/css.dart';
+import 'package:thecodefury/lang_screens/html.dart';
+import 'package:thecodefury/lang_screens/java.dart';
+import 'package:thecodefury/lang_screens/js.dart';
+import 'package:thecodefury/lang_screens/laravel.dart';
+import 'package:thecodefury/lang_screens/nodejs.dart';
+import 'package:thecodefury/lang_screens/php.dart';
+import 'package:thecodefury/lang_screens/python.dart';
+import 'package:thecodefury/lang_screens/reactjs.dart';
+import 'package:thecodefury/lang_screens/swift.dart';
+import 'package:thecodefury/lang_screens/vuejs.dart';
 
 class DRAWER extends StatelessWidget {
   const DRAWER({Key? key}) : super(key: key);
@@ -50,7 +62,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.red,
               ),
               title: Text('HTML'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => Html());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -58,7 +72,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.lightBlue,
               ),
               title: Text('CSS'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => CSS());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -66,7 +82,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.amberAccent,
               ),
               title: Text('JAVASCRIPT'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => JavaScript());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -74,7 +92,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.blue,
               ),
               title: Text('JAVA'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => Java());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -82,7 +102,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.green,
               ),
               title: Text('PYTHON'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => Python());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -90,7 +112,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.indigoAccent,
               ),
               title: Text('PHP'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => Php());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -98,7 +122,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.lightBlueAccent,
               ),
               title: Text('REACT JS'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => ReactJS());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -106,7 +132,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.lightGreen,
               ),
               title: Text('NODE JS'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => NodeJs());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -114,7 +142,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.greenAccent,
               ),
               title: Text('VUE JS'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => VueJs());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -149,7 +179,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.deepOrangeAccent,
               ),
               title: Text('SWIFT'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => Swift());
+              },
             ),
             ListTile(
               leading: Icon(
@@ -165,7 +197,9 @@ class DRAWER extends StatelessWidget {
                 color: Colors.deepOrangeAccent,
               ),
               title: Text('LARAVEL'),
-              onTap: () {},
+              onTap: () {
+                Get.to(() => Laravel());
+              },
             ),
           ],
         )),

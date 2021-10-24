@@ -23,6 +23,7 @@ import 'package:thecodefury/lang_screens/mern.dart';
 import 'package:thecodefury/lang_screens/mevn.dart';
 import 'package:thecodefury/lang_screens/mysql.dart';
 import 'package:thecodefury/lang_screens/nodejs.dart';
+import 'package:thecodefury/lang_screens/oracle.dart';
 import 'package:thecodefury/lang_screens/php.dart';
 import 'package:thecodefury/lang_screens/reactjs.dart';
 import 'package:thecodefury/lang_screens/reactnative.dart';
@@ -1148,28 +1149,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/oracle.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(()=>Oracle()) ;
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/oracle.png',
+                            ),
                           ),
+                          shadowColor: Colors.red,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.red,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'ORACLE DATABASE',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.red),
-                      )
-                    ],
+                        Text(
+                          'ORACLE DATABASE',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.red),
+                        )
+                      ],
+                    ),
                   ),
                   Stack(
                     alignment: Alignment.bottomCenter,
@@ -1191,52 +1197,6 @@ class Technologies extends StatelessWidget {
                         'MONGODB',
                         style: GoogleFonts.abrilFatface(
                             fontSize: 20, color: Colors.green),
-                      )
-                    ],
-                  ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(8),
-                          child: Image.asset(
-                            'assets/programming/angularspring.png',
-                          ),
-                        ),
-                        shadowColor: Colors.lightGreen,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'ANGULAR SPRING STACK',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 15, color: Colors.lightGreen),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(34.0),
-                          child: Image.asset(
-                            'assets/programming/laravue.png',
-                          ),
-                        ),
-                        shadowColor: Colors.redAccent,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'LARAVUE STACK',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.redAccent),
                       )
                     ],
                   ),
