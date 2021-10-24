@@ -49,7 +49,7 @@ final screens = [
       GestureDetector(
         onTap: () {
           Get.to(
-                () => VueJs(),
+            () => VueJs(),
             curve: Curves.bounceInOut,
           );
         },
@@ -103,9 +103,9 @@ final screens = [
               elevation: 0,
             ),
             Text(
-              'Mongo Databse ',
+              'Mongo Database ',
               style:
-              GoogleFonts.abrilFatface(fontSize: 20, color: Colors.green),
+                  GoogleFonts.abrilFatface(fontSize: 20, color: Colors.green),
             )
           ],
         ),
@@ -116,7 +116,7 @@ final screens = [
       GestureDetector(
         onTap: () {
           Get.to(
-                () => NodeJs(),
+            () => NodeJs(),
             curve: Curves.easeInOut,
           );
         },
@@ -171,7 +171,7 @@ class _MEVNState extends State<MEVN> {
       child: Scaffold(
         appBar: AppBar(
           title: Image.asset(
-            'assets/MERN.png',
+            'assets/mevn.png',
             height: 50,
           ),
           centerTitle: true,
@@ -203,4 +203,3 @@ class _MEVNState extends State<MEVN> {
     );
   }
 }
-

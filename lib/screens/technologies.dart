@@ -17,6 +17,7 @@ import 'package:thecodefury/lang_screens/html.dart';
 import 'package:thecodefury/lang_screens/java.dart';
 import 'package:thecodefury/lang_screens/js.dart';
 import 'package:thecodefury/lang_screens/laravel.dart';
+import 'package:thecodefury/lang_screens/laravue.dart';
 import 'package:thecodefury/lang_screens/mean.dart';
 import 'package:thecodefury/lang_screens/mern.dart';
 import 'package:thecodefury/lang_screens/mevn.dart';
@@ -68,12 +69,12 @@ class Technologies extends StatelessWidget {
             ),
             Center(
                 child: Text(
-              ' NEVER GIVE UP',
-              style: GoogleFonts.acme(
-                  fontSize: 25,
-                  decorationColor: Colors.blue,
-                  fontStyle: FontStyle.italic),
-            )),
+                  ' NEVER GIVE UP',
+                  style: GoogleFonts.acme(
+                      fontSize: 25,
+                      decorationColor: Colors.blue,
+                      fontStyle: FontStyle.italic),
+                )),
             Card(
               shadowColor: Colors.cyan,
               elevation: 0,
@@ -92,7 +93,7 @@ class Technologies extends StatelessWidget {
                     autoPlay: true,
                     autoPlayInterval: const Duration(seconds: 3),
                     autoPlayAnimationDuration:
-                        const Duration(milliseconds: 800),
+                    const Duration(milliseconds: 800),
                     autoPlayCurve: Curves.fastOutSlowIn,
                     enlargeCenterPage: true,
                     scrollDirection: Axis.horizontal,
@@ -175,7 +176,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => JavaScript(),
+                            () => JavaScript(),
                         curve: Curves.easeInOutSine,
                       );
                     },
@@ -199,7 +200,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Php(),
+                            () => Php(),
                         curve: Curves.easeOutQuart,
                       );
                     },
@@ -225,7 +226,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Mysql(),
+                            () => Mysql(),
                         curve: Curves.easeInQuad,
                       );
                     },
@@ -251,7 +252,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => TyperScript(),
+                            () => TyperScript(),
                         curve: Curves.easeInQuad,
                       );
                     },
@@ -307,7 +308,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => ReactJS(),
+                            () => ReactJS(),
                         curve: Curves.slowMiddle,
                       );
                     },
@@ -338,7 +339,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Angular(),
+                            () => Angular(),
                         curve: Curves.fastLinearToSlowEaseIn,
                       );
                     },
@@ -369,7 +370,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => VueJs(),
+                            () => VueJs(),
                         curve: Curves.bounceInOut,
                       );
                     },
@@ -400,7 +401,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Bootstrap(),
+                            () => Bootstrap(),
                         curve: Curves.bounceInOut,
                       );
                     },
@@ -461,7 +462,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => NodeJs(),
+                            () => NodeJs(),
                         curve: Curves.easeInOut,
                       );
                     },
@@ -492,7 +493,7 @@ class Technologies extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       Get.to(
-                        () => Laravel(),
+                            () => Laravel(),
                         curve: Curves.easeInCirc,
                       );
                     },
@@ -1061,28 +1062,33 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(34.0),
-                          child: Image.asset(
-                            'assets/programming/laravue.png',
+                  GestureDetector(
+                    onTap: () {
+                      Get.to(()=>Laravue()) ;
+                    },
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(34.0),
+                            child: Image.asset(
+                              'assets/programming/laravue.png',
+                            ),
                           ),
+                          shadowColor: Colors.redAccent,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.redAccent,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'LARAVUE STACK',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.redAccent),
-                      )
-                    ],
+                        Text(
+                          'LARAVUE STACK',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.redAccent),
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
