@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:get/get.dart';
+import 'package:thecodefury/lang_screens/Mongo.dart';
 import 'package:thecodefury/lang_screens/android.dart';
 import 'package:thecodefury/lang_screens/angular.dart';
 import 'package:thecodefury/lang_screens/bootstrap.dart';
@@ -1177,29 +1178,32 @@ class Technologies extends StatelessWidget {
                       ],
                     ),
                   ),
-                  Stack(
-                    alignment: Alignment.bottomCenter,
-                    children: [
-                      Card(
-                        child: Padding(
-                          padding: const EdgeInsets.all(30.0),
-                          child: Image.asset(
-                            'assets/-mongodb.png',
+                  /*GestureDetector(
+                    onTap: ()=>Get.to(()=>Mongo()),
+                    child: Stack(
+                      alignment: Alignment.bottomCenter,
+                      children: [
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(30.0),
+                            child: Image.asset(
+                              'assets/-mongodb.png',
+                            ),
                           ),
+                          shadowColor: Colors.green,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          elevation: 0,
                         ),
-                        shadowColor: Colors.green,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        elevation: 0,
-                      ),
-                      Text(
-                        'MONGODB',
-                        style: GoogleFonts.abrilFatface(
-                            fontSize: 20, color: Colors.green),
-                      )
-                    ],
-                  ),
+                        Text(
+                          'MONGODB',
+                          style: GoogleFonts.abrilFatface(
+                              fontSize: 20, color: Colors.green),
+                        )
+                      ],
+                    ),
+                  ),*/
                 ],
               ),
             ),

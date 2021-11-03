@@ -232,7 +232,7 @@ class _MernHomePageState extends State<MernHomePage> {
           child: Card(
             elevation: 6,
             shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
             child: ListTile(
               leading: Icon(
                 LineIcons.globe,
@@ -250,7 +250,208 @@ class _MernHomePageState extends State<MernHomePage> {
               ),
             ),
           ),
+        ),SizedBox(
+          height: 10,
         ),
+        GestureDetector(
+          onTap: () {
+            launch('https://www.youtube.com/watch?v=g8yGxDMyGiE&list=PLznJ7GsLkxLUT0KYwUjtEjJwEaGUqoREH');
+          },
+          child: Card(
+            elevation: 6,
+            shape:
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            child: ListTile(
+              leading: Icon(
+                LineIcons.youtube,
+                color: Colors.greenAccent,
+              ),
+              trailing: Icon(
+                LineIcons.arrowRight,
+                color: Colors.greenAccent,
+              ),
+              title: Center(
+                child: Text(
+                  'mix-merstack',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+        ),SizedBox(
+          height: 10,
+        ),
+
+        GestureDetector(
+          onTap: () {
+            launch('https://www.youtube.com/watch?v=7CqJlxBYj-M&list=RDQMEPgkgxQKFCY&start_radio=1');
+          },
+          child: Card(
+            elevation: 6,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            child: ListTile(
+              leading: Icon(
+                LineIcons.youtube,
+                color: Colors.greenAccent,
+              ),
+              trailing: Icon(
+                LineIcons.arrowRight,
+                color: Colors.greenAccent,
+              ),
+              title: Center(
+                child: Text(
+                  'mix-merstack',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+        ),SizedBox(
+          height: 10,
+        ), GestureDetector(
+          onTap: () {
+            launch('https://www.youtube.com/c/LamaDev/videos');
+          },
+          child: Card(
+            elevation: 6,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            child: ListTile(
+              leading: Icon(
+                LineIcons.youtube,
+                color: Colors.greenAccent,
+              ),
+              trailing: Icon(
+                LineIcons.arrowRight,
+                color: Colors.greenAccent,
+              ),
+              title: Center(
+                child: Text(
+                  'LamaDev',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+        ),SizedBox(
+          height: 10,
+        ),
+        GestureDetector(
+          onTap: () {
+            launch('https://www.youtube.com/watch?v=ngc9gnGgUdA');
+          },
+          child: Card(
+            elevation: 6,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            child: ListTile(
+              leading: Icon(
+                LineIcons.youtube,
+                color: Colors.greenAccent,
+              ),
+              trailing: Icon(
+                LineIcons.arrowRight,
+                color: Colors.greenAccent,
+              ),
+              title: Center(
+                child: Text(
+                  'JavaScript Mastery',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+        ),SizedBox(
+          height: 10,
+        ),
+        GestureDetector(
+          onTap: () {
+            launch('https://www.youtube.com/watch?v=tvdFYmJEaw4&list=PLB_Wd4-5SGAYsxD4JGaVdXll3PnoyI-AM');
+          },
+          child: Card(
+            elevation: 6,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            child: ListTile(
+              leading: Icon(
+                LineIcons.youtube,
+                color: Colors.greenAccent,
+              ),
+              trailing: Icon(
+                LineIcons.arrowRight,
+                color: Colors.greenAccent,
+              ),
+              title: Center(
+                child: Text(
+                  'Rizwan Khan',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        GestureDetector(
+          onTap: () {
+            launch('https://www.youtube.com/c/RoadsideCoder/playlists');
+          },
+          child: Card(
+            elevation: 6,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            child: ListTile(
+              leading: Icon(
+                LineIcons.youtube,
+                color: Colors.greenAccent,
+              ),
+              trailing: Icon(
+                LineIcons.arrowRight,
+                color: Colors.greenAccent,
+              ),
+              title: Center(
+                child: Text(
+                  "Mark's Coding Spot",
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),GestureDetector(
+          onTap: () {
+            launch('https://www.youtube.com/watch?v=-Vd5RRZXIyo&t=227s');
+          },
+          child: Card(
+            elevation: 6,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+            child: ListTile(
+              leading: Icon(
+                LineIcons.youtube,
+                color: Colors.greenAccent,
+              ),
+              trailing: Icon(
+                LineIcons.arrowRight,
+                color: Colors.greenAccent,
+              ),
+              title: Center(
+                child: Text(
+                  "SkillsBuild Training",
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+
       ],
     );
   }
