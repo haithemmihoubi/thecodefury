@@ -43,7 +43,10 @@ class About extends StatelessWidget {
                 LineIcons.globe),
             SizedBox(
               height: 10,
-            ),Cards('SimplilearnOfficial', 'https://www.youtube.com/c/SimplilearnOfficial',
+            ),
+            Cards(
+                'SimplilearnOfficial',
+                'https://www.youtube.com/c/SimplilearnOfficial',
                 LineIcons.youtube),
             SizedBox(
               height: 10,
@@ -63,6 +66,10 @@ class About extends StatelessWidget {
               height: 10,
             ),
             Cards('hackr', 'https://hackr.io/', LineIcons.globe),
+            SizedBox(
+              height: 10,
+            ),
+            Cards('guru99', 'https://www.guru99.com/', LineIcons.globe),
           ],
         ));
   }
