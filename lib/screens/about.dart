@@ -69,7 +69,10 @@ class About extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            Cards('guru99', 'https://www.guru99.com/', LineIcons.globe),
+            Cards('guru99', 'https://www.guru99.com/', LineIcons.globe), SizedBox(
+              height: 10,
+            ),
+            Cards('guru99', 'https://reconshell.com/', LineIcons.globe),
           ],
         ));
   }
