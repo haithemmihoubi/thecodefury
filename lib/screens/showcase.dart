@@ -12,6 +12,7 @@ import 'package:sliding_clipped_nav_bar/sliding_clipped_nav_bar.dart';
 import 'package:thecodefury/screens/about.dart';
 import 'package:thecodefury/screens/technologies.dart';
 
+import '../profile.dart';
 import 'homepage.dart';
 
 class ShowCase extends StatefulWidget {
@@ -63,8 +64,15 @@ class _ShowCaseState extends State<ShowCase> {
             //badgeCount: 1,
           ),
           CustomNavigationBarItem(
-            icon: Icon(LineIcons.userCircle),
-            title: Text("Me"),
+            icon: GestureDetector(
+              child: Icon(LineIcons.userCircle),
+              onTap: () {
+                Get.to(() => Profile());
+              },
+            ),
+            title: Text("About Me"),
+
+            //badgeCount: 1,
           ),
         ],
         currentIndex: selectedIndex,

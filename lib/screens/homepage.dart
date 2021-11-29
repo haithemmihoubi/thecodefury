@@ -26,6 +26,6 @@ class _HomePageState extends State<HomePage> {
         showShadow: true,
         slideWidth: MediaQuery.of(context).size.width * 0.7,
         mainScreen: ShowCase(),
-        menuScreen: const DRAWER(),
+        menuScreen:  DRAWER(),
       );
 }
