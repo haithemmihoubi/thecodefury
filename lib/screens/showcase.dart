@@ -59,21 +59,11 @@ class _ShowCaseState extends State<ShowCase> {
                 Get.to(() => About());
               },
             ),
-            title: Text("Tools"),
+            title: Text("More"),
 
             //badgeCount: 1,
           ),
-          CustomNavigationBarItem(
-            icon: GestureDetector(
-              child: Icon(LineIcons.userCircle),
-              onTap: () {
-                Get.to(() => Profile());
-              },
-            ),
-            title: Text("About Me"),
 
-            //badgeCount: 1,
-          ),
         ],
         currentIndex: selectedIndex,
         onTap: (int index) {
