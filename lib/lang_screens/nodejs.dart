@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -170,7 +169,8 @@ class NodeJs extends StatelessWidget {
                   Cards(
                       'Coding Addict',
                       'https://www.youtube.com/watch?v=TNV0_7QRDwY',
-                      LineIcons.youtube),SizedBox(
+                      LineIcons.youtube),
+                  SizedBox(
                     height: 10,
                   ),
                   Cards(
@@ -209,7 +209,9 @@ class NodeJs extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('udemy', 'https://www.udemy.com/course/nodejs-the-complete-guide/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-Aqj2e1fq8RneRKp7aAAz_A&utm_medium=udemyads&utm_source=aff-campaign',
+                  Cards(
+                      'udemy',
+                      'https://www.udemy.com/course/nodejs-the-complete-guide/?LSNPUBID=jU79Zysihs4&ranEAID=jU79Zysihs4&ranMID=39197&ranSiteID=jU79Zysihs4-Aqj2e1fq8RneRKp7aAAz_A&utm_medium=udemyads&utm_source=aff-campaign',
                       LineIcons.school),
                   SizedBox(
                     height: 10,
@@ -238,19 +240,21 @@ class NodeJs extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('nodejs.org', 'https://nodejs.org/en/docs/', LineIcons.globe),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'w3schools.com', 'https://www.w3schools.com/nodejs/', LineIcons.globe,),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards(
-                      'nodeschool',
-                      'https://nodeschool.io/',
+                  Cards('nodejs.org', 'https://nodejs.org/en/docs/',
                       LineIcons.globe),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                    'w3schools.com',
+                    'https://www.w3schools.com/nodejs/',
+                    LineIcons.globe,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Cards(
+                      'nodeschool', 'https://nodeschool.io/', LineIcons.globe),
                   Cards(
                       'tutorialsteacher',
                       'https://www.tutorialsteacher.com/nodejs',
@@ -258,7 +262,9 @@ class NodeJs extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('javatpoint', 'https://www.javatpoint.com/nodejs-tutorial',
+                  Cards(
+                      'javatpoint',
+                      'https://www.javatpoint.com/nodejs-tutorial',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,

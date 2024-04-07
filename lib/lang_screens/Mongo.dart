@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icons.dart';
@@ -72,9 +71,7 @@ class Mongo extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Cards(
-                      'khaled',
-                      'https://www.youtube.com/watch?v=6upN1jFs6bc',
+                  Cards('khaled', 'https://www.youtube.com/watch?v=6upN1jFs6bc',
                       LineIcons.youtube),
                   SizedBox(
                     height: 10,
@@ -109,8 +106,6 @@ class Mongo extends StatelessWidget {
                       'Dev Apps',
                       'https://www.youtube.com/watch?v=BBSMB7T8mH0&t=625s',
                       LineIcons.youtube),
-
-
                   SizedBox(
                     height: 20,
                   ),

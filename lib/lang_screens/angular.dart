@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -236,18 +235,16 @@ class Angular extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'angular.io',
-                      'https://angular.io/',
-                      LineIcons.globe),
+                  Cards('angular.io', 'https://angular.io/', LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('freecodecamp', 'https://www.freecodecamp.org/news/tag/angular/', LineIcons.globe),
                   Cards(
-                      'angular-university',
-                      'https://blog.angular-university.io/',
+                      'freecodecamp',
+                      'https://www.freecodecamp.org/news/tag/angular/',
                       LineIcons.globe),
+                  Cards('angular-university',
+                      'https://blog.angular-university.io/', LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
@@ -258,7 +255,6 @@ class Angular extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-
                 ],
               ),
             ],

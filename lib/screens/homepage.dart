@@ -18,14 +18,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) => ZoomDrawer(
         borderRadius: 30,
-        backgroundColor: Colors.lightBlue,
-        style: DrawerStyle.Style1,
-        openCurve: Curves.easeInOut,
+        drawerShadowsBackgroundColor: Colors.lightBlue,
+        menuBackgroundColor: Colors.blue[300] ?? Colors.lightBlue,
+        style: DrawerStyle.defaultStyle,
+        // backgroundColor: Colors.lightBlue,
+        openCurve: Curves.fastOutSlowIn,
         angle: -12,
         closeCurve: Curves.bounceOut,
         showShadow: true,
         slideWidth: MediaQuery.of(context).size.width * 0.7,
         mainScreen: ShowCase(),
-        menuScreen:  DRAWER(),
+        menuScreen: DRAWER(),
       );
 }

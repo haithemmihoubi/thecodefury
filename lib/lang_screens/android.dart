@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -87,13 +86,12 @@ class Android extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Cards(
-                      'developer.android',
-                      'https://developer.android.com/guide',
-                      LineIcons.youtube),
+                  Cards('developer.android',
+                      'https://developer.android.com/guide', LineIcons.youtube),
                   SizedBox(
                     height: 10,
-                  ),Cards(
+                  ),
+                  Cards(
                       'Muhammed Essa',
                       'https://www.youtube.com/watch?v=nFin_KqJ98M&list=PLMYF6NkLrdN8giOLjGRx81fjEIaE5ef-8',
                       LineIcons.youtube),

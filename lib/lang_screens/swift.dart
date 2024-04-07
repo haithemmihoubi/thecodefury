@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -256,10 +255,9 @@ class Swift extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'designcode',
-                      'https://designcode.io/swift4',
-                      LineIcons.school),SizedBox(
+                  Cards('designcode', 'https://designcode.io/swift4',
+                      LineIcons.school),
+                  SizedBox(
                     height: 10,
                   ),
                   Cards(
@@ -286,12 +284,17 @@ class Swift extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('udemy', 'https://www.udemy.com/course/ios11development/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-O5AXmqat._Nd8iJ9tEcVUw&utm_medium=udemyads&utm_source=aff-campaign', LineIcons.globe),
+                  Cards(
+                      'udemy',
+                      'https://www.udemy.com/course/ios11development/?LSNPUBID=JVFxdTr9V80&ranEAID=JVFxdTr9V80&ranMID=39197&ranSiteID=JVFxdTr9V80-O5AXmqat._Nd8iJ9tEcVUw&utm_medium=udemyads&utm_source=aff-campaign',
+                      LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'udemy', 'https://www.udemy.com/courses/search/?price=price-free&q=swift&sort=relevance&ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-RVwdotZI93N4FBHiFZOLcg&utm_source=aff-campaign&LSNPUBID=JVFxdTr9V80&utm_medium=udemyads/', LineIcons.globe),
+                      'udemy',
+                      'https://www.udemy.com/courses/search/?price=price-free&q=swift&sort=relevance&ranMID=39197&ranEAID=JVFxdTr9V80&ranSiteID=JVFxdTr9V80-RVwdotZI93N4FBHiFZOLcg&utm_source=aff-campaign&LSNPUBID=JVFxdTr9V80&utm_medium=udemyads/',
+                      LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
@@ -305,20 +308,21 @@ class Swift extends StatelessWidget {
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
-                  ), Cards(
+                  ),
+                  Cards(
                       'codecademy',
-                     "https://www.codecademy.com/learn/learn-swift" ,
-                      LineIcons.globe),
-                  SizedBox(
-                    height: 10,
-                  ),Cards(
-                      'classcentral',
-                     "https://www.classcentral.com/subject/swift" ,
+                      "https://www.codecademy.com/learn/learn-swift",
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-
+                  Cards(
+                      'classcentral',
+                      "https://www.classcentral.com/subject/swift",
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 10,
+                  ),
                   SizedBox(
                     height: 20,
                   ),

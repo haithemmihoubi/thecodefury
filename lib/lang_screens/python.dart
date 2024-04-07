@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -254,7 +253,6 @@ class Python extends StatelessWidget {
               /*DOCS BEGINING*/
               ListView(
                 children: [
-
                   SizedBox(
                     height: 10,
                   ),
@@ -264,9 +262,8 @@ class Python extends StatelessWidget {
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
-                  ),Cards(
-                      'learnpython',
-                      'https://learnpython.com/',
+                  ),
+                  Cards('learnpython', 'https://learnpython.com/',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
@@ -282,9 +279,7 @@ class Python extends StatelessWidget {
                       'realpython',
                       'https://realpython.com/courses/real-python-welcome/',
                       LineIcons.globe),
-                  Cards(
-                      'learnpython',
-                      'https://www.learnpython.org/',
+                  Cards('learnpython', 'https://www.learnpython.org/',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
@@ -302,9 +297,8 @@ class Python extends StatelessWidget {
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
-                  ),Cards(
-                      'w3schools',
-                      "https://www.w3schools.com/python/",
+                  ),
+                  Cards('w3schools', "https://www.w3schools.com/python/",
                       LineIcons.globe),
                   SizedBox(
                     height: 10,

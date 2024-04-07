@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:circular_menu/circular_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -150,7 +149,8 @@ final screens = [
       Image.asset(
         'assets/happy coding.png',
         fit: BoxFit.cover,
-      ),  SizedBox(
+      ),
+      SizedBox(
         height: 20,
       ),
       Lottie.asset(

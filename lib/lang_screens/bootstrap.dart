@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -248,10 +247,8 @@ class Bootstrap extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'w3schools.com',
-                      'https://www.w3schools.com/bootstrap4/',
-                      LineIcons.globe),
+                  Cards('w3schools.com',
+                      'https://www.w3schools.com/bootstrap4/', LineIcons.globe),
                   Cards(
                       'tutorialrepublic.com',
                       'https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/',
@@ -259,7 +256,9 @@ class Bootstrap extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('javatpoint.com', 'https://www.javatpoint.com/bootstrap-tutorial',
+                  Cards(
+                      'javatpoint.com',
+                      'https://www.javatpoint.com/bootstrap-tutorial',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,

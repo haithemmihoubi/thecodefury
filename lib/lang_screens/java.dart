@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -242,39 +241,39 @@ class Java extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'oracle',
-                      'https://docs.oracle.com/javase/tutorial/',
-                      LineIcons.globe),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Cards('codecademy', 'https://www.codecademy.com/learn/learn-java', LineIcons.globe),
-                  Cards(
-                      'learnjavaonline',
-                      'https://www.learnjavaonline.org/',
+                  Cards('oracle', 'https://docs.oracle.com/javase/tutorial/',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
                   Cards(
-                      'w3schools',
-                      'https://www.w3schools.com/java/',
+                      'codecademy',
+                      'https://www.codecademy.com/learn/learn-java',
+                      LineIcons.globe),
+                  Cards('learnjavaonline', 'https://www.learnjavaonline.org/',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('programiz', 'https://www.programiz.com/java-programming',
+                  Cards('w3schools', 'https://www.w3schools.com/java/',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-                  Cards('javatpoint', 'https://www.javatpoint.com/java-tutorial',
+                  Cards(
+                      'programiz',
+                      'https://www.programiz.com/java-programming',
                       LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
-
+                  Cards(
+                      'javatpoint',
+                      'https://www.javatpoint.com/java-tutorial',
+                      LineIcons.globe),
+                  SizedBox(
+                    height: 10,
+                  ),
                 ],
               ),
             ],

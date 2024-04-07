@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -187,7 +186,8 @@ class SpringBoot extends StatelessWidget {
                       LineIcons.school),
                   SizedBox(
                     height: 10,
-                  ),Cards(
+                  ),
+                  Cards(
                       'coursera',
                       'https://www.coursera.org/learn/cloud-services-java-spring-framework?ranMID=40328&ranEAID=jU79Zysihs4&ranSiteID=jU79Zysihs4-m8K18z_1XCavj65Qm7fRWw&siteID=jU79Zysihs4-m8K18z_1XCavj65Qm7fRWw&utm_content=10&utm_medium=partners&utm_source=linkshare&utm_campaign=jU79Zysihs4',
                       LineIcons.school),
@@ -214,10 +214,7 @@ class SpringBoot extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'spring.io',
-                      'https://spring.io/',
-                      LineIcons.globe),
+                  Cards('spring.io', 'https://spring.io/', LineIcons.globe),
                   SizedBox(
                     height: 10,
                   ),
@@ -228,9 +225,7 @@ class SpringBoot extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  Cards(
-                      'baeldung.com',
-                      'https://www.baeldung.com/spring-boot',
+                  Cards('baeldung.com', 'https://www.baeldung.com/spring-boot',
                       LineIcons.globe),
                   Cards(
                       'tutorialspoint',
@@ -246,11 +241,9 @@ class SpringBoot extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-
                   SizedBox(
                     height: 20,
                   ),
-
                 ],
               ),
             ],

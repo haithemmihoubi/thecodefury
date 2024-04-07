@@ -1,5 +1,4 @@
-import 'package:backdrop/app_bar.dart';
-import 'package:backdrop/scaffold.dart';
+import 'package:backdrop/backdrop.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:line_icons/line_icon.dart';
@@ -208,7 +207,8 @@ class Laravue extends StatelessWidget {
                     height: 20,
                   ),
                   Cards(
-                      'udemy','https://www.udemy.com/course/laravel-vuejs-fullstack-web-development/',
+                      'udemy',
+                      'https://www.udemy.com/course/laravel-vuejs-fullstack-web-development/',
                       LineIcons.school),
                   Cards(
                       'udemy',
@@ -217,7 +217,6 @@ class Laravue extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-
                   SizedBox(
                     height: 10,
                   ),
@@ -229,8 +228,6 @@ class Laravue extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-
-
                 ],
               ),
             ],
