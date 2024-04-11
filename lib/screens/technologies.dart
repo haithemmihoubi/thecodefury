@@ -59,23 +59,6 @@ class Technologies extends StatelessWidget {
         child: ListView(
           //crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(
-              child: Text(
-                'Hey ,It Will Be a Long Journey But Its Worth it',
-                style: GoogleFonts.acme(
-                  fontSize: 20,
-                  fontStyle: FontStyle.italic,
-                ),
-              ),
-            ),
-            Center(
-                child: Text(
-              ' NEVER GIVE UP',
-              style: GoogleFonts.acme(
-                  fontSize: 25,
-                  decorationColor: Colors.blue,
-                  fontStyle: FontStyle.italic),
-            )),
             Card(
               shadowColor: Colors.cyan,
               elevation: 0,
